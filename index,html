@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto equipo...</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+   <header>
+       <h1>Equipo de animalitos</h1>
+   </header>
+   <main>
+
+   <p>Este es un parrafo de texto...</p>
+
+   </main>
+   <footer>
+     <p>Este es mi footer.</p>
+    </footer>
+  </body>
+</html>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
