@@ -1,2 +1,18 @@
+/* Aplicar la fuente Inter a todo el cuerpo de la página */
 body {
-    background-color: lightgray; }
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 400 es el valor normal, puedes usar 700 para negrita */
+    font-style: normal;
+    
+    /* Agreguemos unos colores para que se vea mejor */
+    background-color: #0b0c10;
+    color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Si quieres que tus títulos tengan más fuerza */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #d2042d; /* Ese rojo carmesí que resalta */
+}
