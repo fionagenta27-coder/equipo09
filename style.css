@@ -1,14 +1,65 @@
-/* Aplicar a toda la página */
+/* 1. CONFIGURACIÓN GENERAL (Tu base mejorada) */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #293415;
+    font-size: 18px;             /* Un poco más grande para que sea legible */
+    color: #2d5a27;               /* Verde oscuro (mejor contraste que el verde claro) */
+    background-color: #f9fbf9;    /* Fondo apenas verdoso para que no canse la vista */
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;            /* Centra el contenido y le da un ancho máximo profesional */
 }
 
-/* Aplicar solo a los títulos principales */
+/* 2. TÍTULOS (Jerarquía visual) */
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Esto usa la versión negrita que seleccionaste */
+    font-weight: 700;
     text-transform: uppercase;
+    color: #1e3d1a;               /* Verde más profundo */
+    border-bottom: 4px solid #a2d149; /* Subrayado decorativo verde lima */
+    display: inline-block;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #2d5a27;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+/* 3. NAVEGACIÓN (Tus links de arriba) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    background-color: #2d5a27;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #a2d149; /* Cambia de color al pasar el mouse */
+}
+
+/* 4. IMÁGENES (Para que no queden gigantes) */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+    margin: 20px 0;
+}
+
+/* 5. LISTAS (Beneficios del plato) */
+li {
+    margin-bottom: 8px;
+    list-style-type: "🌿 "; /* Viñeta personalizada con emoji */
 }
 
