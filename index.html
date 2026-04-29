@@ -10,73 +10,118 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <img src="fotos/logogs.png" alt="Logo Green Skills">
+    <!-- 1. HEADER: Con fondo verde lima y botones de login -->
+    <header class="header-principal">
+        <div class="contenedor-centrado">
+            <div id="logo">
+                <img src="fotos/logogs.png" alt="Logo Green Skills">
+            </div>
+            <nav id="principal1">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="botones-auth">
+                <button class="btn-login">Iniciar sesión</button>
+                <button class="btn-reg">Registrarse</button>
+            </div>
         </div>
-        <nav id="principal1">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tutoriales.html">Tutoriales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-    <div class="hero-texto">
-        <h1>Aprendé a cocinar verde</h1>
-        <p>Explorá ingredientes y técnicas de la cocina vegetariana mientras aprendés de manera práctica y dinámica.</p>
-        <a href="#" class="boton-principal">Empezar ahora</a> <!-- Agregamos el botón -->
-    </div>
+        <!-- 2. HERO: Con fondo beige claro -->
+        <section class="seccion-hero">
+            <div class="contenedor-centrado hero" id="hero">
+                <div class="hero-texto">
+                    <h1>Aprendé a cocinar verde</h1>
+                    <p>Explorá ingredientes y técnicas de la cocina vegetariana mientras aprendés de manera práctica y dinámica.</p>
+                    <a href="#" class="boton-principal">Empezar ahora</a>
+                </div>
 
-    <div class="hero-imagen">
-        <img src="fotos/plato.jpg" alt="Plato saludable" class="imagen-circular">
-        
-        <!-- El aside de beneficios ahora vive dentro de la zona de la imagen -->
-        <aside class="cuadro-beneficios">
-            <h3>Beneficios del plato</h3>
-            <ul>
-                <li>Vitamina C</li>
-                <li>Fibra</li>
-                <li>Antioxidantes</li>
-            </ul>
-        </aside>
-    </div>
-</section>
-
-        <section id="talleres">
-            <h2>Talleres y Charlas</h2>
-            <article>
-                <h3>Ensalada Mediterránea</h3>
-                <img src="fotos/ensalda.jpg" alt="Ensalada fresca">
-                <p>Atún fresco con hojas verdes.</p>
-            </article>
+                <div class="hero-imagen">
+                    <img src="fotos/plato.jpg" alt="Plato saludable" class="imagen-circular">
+                    <aside class="cuadro-beneficios">
+                        <h3>Beneficios del plato</h3>
+                        <ul>
+                            <li>Vitamina C</li>
+                            <li>Fibra</li>
+                            <li>Antioxidantes</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
         </section>
-<section id="juegos">
-    <h2>Ponete a prueba</h2>
-    <p>Desafía lo que sabés y aprendé algo nuevo en cada juego.</p>
-    
-    <div class="contenedor-grilla"> <!-- Este div es el que tendrá el display: grid -->
-        <article class="tarjeta">
-            <h3>El Plato Perfecto</h3>
-            <p>Armá tu combinación ideal y compartila.</p>
-            <a href="#">DESCUBRE ></a>
-        </article>
-        
-        <!-- Aquí podés ir agregando más artículos <article class="tarjeta"> 
-             para completar los 4 que tenés en tu diseño -->
-    </div>
-</section>
+
+        <!-- 3. NUEVA SECCIÓN: Recursos (La de los botones oscuros) -->
+        <section class="seccion-recursos">
+            <div class="contenedor-centrado">
+                <div class="texto-recursos">
+                    <h2>Recursos y materiales</h2>
+                    <p>Conocé los materiales, ingredientes y utensilios que vas a utilizar.</p>
+                </div>
+                <div class="botones-recursos">
+                    <span class="pildora-oscura">Tutoriales</span>
+                    <span class="pildora-oscura">Guías</span>
+                    <span class="pildora-oscura">Recetas</span>
+                    <span class="pildora-oscura">Ingredientes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TALLERES Y JUEGOS: Contenido centrado -->
+        <div class="contenedor-centrado">
+            <section id="talleres">
+                <h2>Talleres y Charlas</h2>
+                <div class="contenedor-grilla">
+                    <article class="tarjeta-taller">
+                        <h3>Ensalada Mediterránea</h3>
+                        <img src="fotos/ensalda.jpg" alt="Ensalada fresca">
+                        <p>Atún fresco con hojas verdes.</p>
+                    </article>
+                    <!-- Aquí podés sumar más talleres -->
+                </div>
+            </section>
+
+            <section id="juegos">
+                <h2>Ponete a prueba</h2>
+                <p>Desafía lo que sabés y aprendé algo nuevo en cada juego.</p>
+                <div class="contenedor-grilla">
+                    <article class="tarjeta">
+                        <h3>El Plato Perfecto</h3>
+                        <p>Armá tu combinación ideal y compartila.</p>
+                        <a href="#">DESCUBRE ></a>
+                    </article>
+                    <!-- Aquí sumás las otras 3 tarjetas de juegos -->
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <section id="newsletter">
-            <h3>Suscribite a nuestro Newsletter</h3>
-            <p>Recibí recetas en tu mail.</p>
-        </section>
-        <p>© 2026 Green Skills - Tecno UB</p>
+    <!-- 5. FOOTER: Estructura doble como tu dibujo -->
+    <footer class="footer-total">
+        <div class="newsletter">
+            <div class="contenedor-centrado">
+                <div class="texto-news">
+                    <h3>Suscribite a nuestro Newsletter</h3>
+                    <p>Recibí recetas y novedades en tu mail.</p>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Dirección de mail">
+                    <button class="btn-footer">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-datos">
+            <div class="contenedor-centrado">
+                <p>© 2026 Green Skills - Tecno UB</p>
+                <div class="redes">
+                    <!-- Aquí irían tus iconos -->
+                    <span>Seguinos en redes</span>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
