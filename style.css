@@ -61,31 +61,83 @@ li {
    6. ESTRUCTURA DE DISEÑO (Layout)
    ========================================= */
 
-/* Sección Hero: Texto e Imagen lado a lado */
-.hero {
+/* --- Ajustes específicos para el Header de la foto --- */
+
+.header-principal {
+    background-color: #b8c98e; /* El verde oliva claro de fondo */
+    padding: 15px 0;
+}
+
+/* Estilo para el texto GREEN SKILLS */
+#logo-texto {
+    font-weight: 900;
+    font-size: 24px;
+    color: #4a5d23; /* Verde oliva oscuro */
+    letter-spacing: 1px;
+}
+
+/* Buscador (La barra con la lupa) */
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.search-bar {
+    background-color: #5d7031; /* Verde oscuro */
+    border-radius: 25px;
     display: flex;
     align-items: center;
-    gap: 40px;
-    padding: 40px 0;
+    padding: 5px 15px;
+    width: 200px;
 }
 
-.hero-texto {
-    flex: 1;
-}
-
-.hero-imagen {
-    flex: 1;
-    position: relative;
-}
-
-/* Imagen circular */
-.imagen-circular {
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
     width: 100%;
-    max-width: 450px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%; 
-    object-fit: cover;
+    outline: none;
 }
+
+.lupa {
+    background-color: #fcfbe3; /* Círculo crema de la lupa */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* Botones de Iniciar Sesión y Registrarse */
+.btn-login, .btn-reg {
+    background-color: #5d7031; /* Verde oscuro */
+    color: #fcfbe3; /* Texto color crema */
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px; /* Forma de píldora */
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-login:hover, .btn-reg:hover {
+    background-color: #4a5d23;
+}
+
+/* Ajuste de los links del menú */
+nav#principal1 ul li a {
+    color: #000; /* Texto negro según la foto */
+    font-size: 16px;
+    text-decoration: none;
+}
+
 /* =========================================
    7. CONTENEDOR DE CENTRADO (Base del diseño)
    ========================================= */
@@ -104,24 +156,81 @@ li {
    8. HEADER (Flexbox aplicado al menú superior)
    ========================================= */
 
+/* --- Ajustes específicos para el Header de la foto --- */
+
 .header-principal {
-    background-color: #a2d149; /* El verde lima de tu borrador */
-    padding: 10px 0;
+    background-color: #b8c98e; /* El verde oliva claro de fondo */
+    padding: 15px 0;
 }
 
-.botones-auth {
+/* Estilo para el texto GREEN SKILLS */
+#logo-texto {
+    font-weight: 900;
+    font-size: 24px;
+    color: #4a5d23; /* Verde oliva oscuro */
+    letter-spacing: 1px;
+}
+
+/* Buscador (La barra con la lupa) */
+.search-container {
+    flex: 1;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    margin: 0 20px;
 }
 
-.btn-login, .btn-reg {
-    background-color: #548235;
-    color: white;
+.search-bar {
+    background-color: #5d7031; /* Verde oscuro */
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    width: 200px;
+}
+
+.search-bar input {
+    background: transparent;
     border: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    cursor: pointer;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.lupa {
+    background-color: #fcfbe3; /* Círculo crema de la lupa */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* Botones de Iniciar Sesión y Registrarse */
+.btn-login, .btn-reg {
+    background-color: #5d7031; /* Verde oscuro */
+    color: #fcfbe3; /* Texto color crema */
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px; /* Forma de píldora */
     font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-login:hover, .btn-reg:hover {
+    background-color: #4a5d23;
+}
+
+/* Ajuste de los links del menú */
+nav#principal1 ul li a {
+    color: #000; /* Texto negro según la foto */
+    font-size: 16px;
+    text-decoration: none;
 }
 
 /* =========================================
@@ -201,7 +310,7 @@ li {
    12. DISEÑO RESPONSIVO (Ajustes para Celular)
    ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { cambiar el tamaño
     
     /* 1. Ajustamos los márgenes generales del cuerpo */
     body {
