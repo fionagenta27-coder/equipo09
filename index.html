@@ -4,75 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Skills - Inicio</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 1. HEADER: Con fondo verde lima y botones de login -->
- <header class="header-principal">
-    <div class="contenedor-centrado">
-        <!-- Nombre del sitio en lugar de imagen para que coincida con la foto -->
-        <div id="logo-texto">
-            GREEN SKILLS
-        </div>
-        
-        <nav id="principal1">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="profesores.html">Profesores</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <!-- Barra de búsqueda con lupa -->
-        <div class="search-container">
-            <div class="search-bar">
-                <span class="lupa"></span>
-                <input type="text">
+    <!-- 1. HEADER: Con separación de logo y menú -->
+    <header class="header-principal">
+        <div class="contenedor-centrado header-flex">
+            <div id="logo-texto">GREEN SKILLS</div>
+            
+            <div class="header-derecha">
+                <nav id="principal1">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="profesores.html">Profesores</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <span class="lupa">🔍</span>
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="botones-auth">
+                    <button class="btn-login">Iniciar sesión</button>
+                    <button class="btn-reg">Registrarse</button>
+                </div>
             </div>
         </div>
+    </header>
 
-        <div class="botones-auth">
-            <button class="btn-login">Iniciar sesión</button>
-            <button class="btn-reg">Registrarse</button>
-        </div>
-    </div>
-</header>
     <main>
-        <!-- 2. HERO: Con fondo beige claro -->
+        <!-- 2. HERO: Efecto de superposición del plato -->
         <section class="seccion-hero">
-            <div class="contenedor-centrado hero" id="hero">
+            <div class="contenedor-centrado hero-flex">
                 <div class="hero-texto">
-                    <h1>Aprendé a cocinar verde</h1>
+                    <h1>Aprendé a <span>cocinar verde</span></h1>
                     <p>Explorá ingredientes y técnicas de la cocina vegetariana mientras aprendés de manera práctica y dinámica.</p>
                     <a href="#" class="boton-principal">Empezar ahora</a>
                 </div>
-                <div class="hero-imagen">
-                    <img src="fotos/plato.jpg" alt="Plato saludable" class="imagen-circular">
+                
+                <div class="hero-visual">
                     <aside class="cuadro-beneficios">
                         <h3>Beneficios del plato</h3>
                         <ul>
                             <li>Vitamina C</li>
                             <li>Fibra</li>
                             <li>Antioxidantes</li>
+                            <li>Hierro vegetal</li>
+                        </ul>
+                    </aside>
+                    <img src="fotos/plato.png" alt="Plato saludable" class="plato-overlap">
             </div>
         </section>
 
-        <!-- 3. NUEVA SECCIÓN: Recursos (La de los botones oscuros) -->
+        <!-- 3. RECURSOS: Franja verde con botones oscuros -->
         <section class="seccion-recursos">
-            <div class="contenedor-centrado">
+            <div class="contenedor-centrado recursos-flex">
                 <div class="texto-recursos">
                     <h2>Recursos y materiales</h2>
-                    <p>Conocé los materiales, ingredientes y utensilios que vas a utilizar.</p>
+                    <p>Conocé los <strong>materiales, ingredientes</strong> y <strong>utensilios</strong> que vas a utilizar.</p>
                 </div>
                 <div class="botones-recursos">
-                    <span class="pildora-oscura">Tutoriales</span>
-                    <span class="pildora-oscura">Recetas</span>
-                    <span class="pildora-oscura">Ingredientes</span>
-                </div>
+                    <button class="pildora-oscura">Tutoriales</button>
+                    <button class="pildora-oscura">Recetas</button>
+                    <button class="pildora-oscura">Ingredientes</button>
             </div>
         </section>
 
