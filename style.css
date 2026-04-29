@@ -197,3 +197,61 @@ li {
     border-radius: 15px;
     text-align: center;
 }
+/* =========================================
+   12. DISEÑO RESPONSIVO (Ajustes para Celular)
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Ajustamos los márgenes generales del cuerpo */
+    body {
+        font-size: 16px; /* Bajamos un poco el tamaño de letra general */
+    }
+
+    /* 2. El Hero: pasamos de 2 columnas a 1 solas */
+    .hero {
+        flex-direction: column; /* Ponemos el texto arriba y la imagen abajo */
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .hero-imagen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen-circular {
+        max-width: 300px; /* Achicamos la imagen en el celu */
+        height: auto;
+    }
+
+    /* 3. El Header: apilamos el logo y el menú */
+    .header-principal .contenedor-centrado {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Si los links son muchos, que bajen a otra línea */
+        justify-content: center;
+    }
+
+    /* 4. Las grillas: que se vea 1 sola tarjeta por fila */
+    .contenedor-grilla {
+        grid-template-columns: 1fr; /* Una sola columna a lo ancho */
+        gap: 15px;
+    }
+
+    /* 5. El Footer: centramos el newsletter */
+    .newsletter .contenedor-centrado {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .input-group {
+        width: 100%;
+        flex-direction: column; /* El botón se pone debajo del campo de mail */
+    }
+}
