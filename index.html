@@ -24,20 +24,27 @@
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Aprendé a cocinar verde</h1>
-            <p>Explorá ingredientes y técnicas de la cocina vegetariana.</p>
-            <img src="fotos/plato.jpg" alt="Plato saludable">
-            
-            <aside>
-                <h3>Beneficios del plato</h3>
-                <ul>
-                    <li>Vitamina C</li>
-                    <li>Fibra</li>
-                    <li>Antioxidantes</li>
-                </ul>
-            </aside>
-        </section>
+        <section id="hero" class="hero">
+    <div class="hero-texto">
+        <h1>Aprendé a cocinar verde</h1>
+        <p>Explorá ingredientes y técnicas de la cocina vegetariana mientras aprendés de manera práctica y dinámica.</p>
+        <a href="#" class="boton-principal">Empezar ahora</a> <!-- Agregamos el botón -->
+    </div>
+
+    <div class="hero-imagen">
+        <img src="fotos/plato.jpg" alt="Plato saludable" class="imagen-circular">
+        
+        <!-- El aside de beneficios ahora vive dentro de la zona de la imagen -->
+        <aside class="cuadro-beneficios">
+            <h3>Beneficios del plato</h3>
+            <ul>
+                <li>Vitamina C</li>
+                <li>Fibra</li>
+                <li>Antioxidantes</li>
+            </ul>
+        </aside>
+    </div>
+</section>
 
         <section id="talleres">
             <h2>Talleres y Charlas</h2>
@@ -47,14 +54,21 @@
                 <p>Atún fresco con hojas verdes.</p>
             </article>
         </section>
-
-        <section id="juegos">
-            <h2>Ponete a prueba</h2>
-            <article>
-                <h3>El Plato Perfecto</h3>
-                <p>Armá tu combinación ideal y compartila.</p>
-            </article>
-        </section>
+<section id="juegos">
+    <h2>Ponete a prueba</h2>
+    <p>Desafía lo que sabés y aprendé algo nuevo en cada juego.</p>
+    
+    <div class="contenedor-grilla"> <!-- Este div es el que tendrá el display: grid -->
+        <article class="tarjeta">
+            <h3>El Plato Perfecto</h3>
+            <p>Armá tu combinación ideal y compartila.</p>
+            <a href="#">DESCUBRE ></a>
+        </article>
+        
+        <!-- Aquí podés ir agregando más artículos <article class="tarjeta"> 
+             para completar los 4 que tenés en tu diseño -->
+    </div>
+</section>
     </main>
 
     <footer>
