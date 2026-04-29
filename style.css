@@ -454,3 +454,58 @@ nav#principal1 ul li a {
         grid-template-columns: 1fr;
     }
 }
+/* Contenedor padre de la derecha */
+.hero-derecha {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 50px; /* Espacio para que no choque con el texto */
+}
+
+/* El cuadro verde de beneficios */
+.cuadro-beneficios {
+    background-color: #c5e0b4; /* Verde clarito */
+    padding: 40px 60px 40px 40px; /* Más espacio a la derecha para que el plato apoye */
+    border-radius: 40px;
+    min-width: 280px;
+    z-index: 1; /* Queda atrás */
+}
+
+.cuadro-beneficios h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #1e3d1a;
+}
+
+.cuadro-beneficios ul li {
+    list-style: none; /* Quitamos los emojis anteriores */
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.cuadro-beneficios ul li::before {
+    content: "• "; /* Punto simple como en la foto 2 */
+    color: #1e3d1a;
+}
+
+/* La imagen del plato con el efecto de superposición */
+.imagen-plato {
+    width: 450px; /* Tamaño grande como en tu diseño */
+    height: auto;
+    border-radius: 50%; /* Asegura que sea circular */
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.2); /* Sombra profunda para que parezca real */
+    margin-left: -80px; /* EL TRUCO: margen negativo para que se meta dentro del cuadro verde */
+    z-index: 2; /* Queda adelante */
+    position: relative;
+}
+
+/* Ajuste para que el texto de la izquierda sea más grande */
+.hero-texto h1 {
+    font-size: 4rem;
+    color: #1e3d1a;
+    border: none; /* Quitamos la línea de abajo para que sea igual a la foto 2 */
+}
+
+.hero-texto h1 span {
+    color: #a2d149; /* Color verde lima para "cocinar verde" */
+}
