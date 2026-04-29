@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     max-width: 1000px;            /* Centra el contenido y le da un ancho máximo profesional */
+    
 }
 
 /* 2. TÍTULOS (Jerarquía visual) */
@@ -61,4 +62,83 @@ img {
 li {
     margin-bottom: 8px;
     list-style-type: "🌿 "; /* Viñeta personalizada con emoji */
+}
+/* =========================================
+   6. ESTRUCTURA DE DISEÑO (Layout)
+   ========================================= */
+
+/* Alinea el Logo y el Menú enfrentados */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Ajuste para que tu nav actual no se vea como una caja separada */
+nav ul {
+    background-color: transparent !important; /* Quitamos el verde de fondo si querés el look del diseño */
+    margin: 0;
+}
+
+nav a {
+    color: #2d5a27 !important; /* Links en verde */
+}
+
+/* Sección Hero: Texto e Imagen lado a lado */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-imagen {
+    flex: 1;
+    position: relative;
+}
+
+/* Imagen circular (Asegurate de agregar la clase 'imagen-circular' en el HTML) */
+.imagen-circular {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50% !important; /* Fuerza el círculo */
+    object-fit: cover;
+}
+
+/* =========================================
+   7. GRILLA DE JUEGOS Y TARJETAS
+   ========================================= */
+
+.contenedor-grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Se acomoda solo según el tamaño */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: #e2efd9; 
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Botón estilo píldora */
+.boton-principal {
+    display: inline-block;
+    background-color: #2d5a27;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
 }
