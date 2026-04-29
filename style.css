@@ -51,12 +51,6 @@ img {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
     margin: 20px 0;
 }
-
-/* 5. LISTAS (Beneficios del plato) */
-li {
-    margin-bottom: 8px;
-    list-style-type: "🌿 "; /* Viñeta personalizada con emoji */
-}
 /* =========================================
    6. ESTRUCTURA DE DISEÑO (Layout)
    ========================================= */
