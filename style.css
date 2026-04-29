@@ -86,3 +86,114 @@ li {
     border-radius: 50%; 
     object-fit: cover;
 }
+/* =========================================
+   7. CONTENEDOR DE CENTRADO (Base del diseño)
+   ========================================= */
+
+/* Este es el que permite que el fondo sea infinito pero el contenido esté centrado */
+.contenedor-centrado {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* Flexbox para alinear logo y menú */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================================
+   8. HEADER (Flexbox aplicado al menú superior)
+   ========================================= */
+
+.header-principal {
+    background-color: #a2d149; /* El verde lima de tu borrador */
+    padding: 10px 0;
+}
+
+.botones-auth {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-reg {
+    background-color: #548235;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* =========================================
+   9. SECCIONES DE COLOR (Fondos infinitos)
+   ========================================= */
+
+.seccion-hero {
+    background-color: #f1f3e8; /* El beige de tu borrador */
+}
+
+.seccion-recursos {
+    background-color: #c5e0b4; /* Verde intermedio */
+    padding: 40px 0;
+}
+
+/* Flexbox para los botones de Recursos */
+.botones-recursos {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pildora-oscura {
+    background-color: #548235;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* =========================================
+   10. FOOTER (Flexbox para el Newsletter)
+   ========================================= */
+
+.newsletter {
+    background-color: #a2d149;
+    padding: 30px 0;
+}
+
+/* Flexbox para que el texto y el mail estén enfrentados */
+.newsletter .contenedor-centrado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-datos {
+    background-color: #2d5a27; /* Verde oscuro final */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* =========================================
+   11. GRILLA DE JUEGOS
+   ========================================= */
+
+.contenedor-grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.tarjeta {
+    background-color: #e2efd9;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
