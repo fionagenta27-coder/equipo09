@@ -1,14 +1,11 @@
 /* 1. CONFIGURACIÓN GENERAL (Tu base mejorada) */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;             /* Un poco más grande para que sea legible */
-    color: #2d5a27;               /* Verde oscuro (mejor contraste que el verde claro) */
-    background-color: #f9fbf9;    /* Fondo apenas verdoso para que no canse la vista */
+    font-size: 18px;
+    color: #2d5a27;
+    background-color: #f9fbf9;
     line-height: 1.6;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1000px;            /* Centra el contenido y le da un ancho máximo profesional */
-    
+    margin: 0; /* Solo dejamos el margen en 0 para quitar los bordes blancos por defecto del navegador */
 }
 
 /* 2. TÍTULOS (Jerarquía visual) */
@@ -34,19 +31,16 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
-    background-color: #2d5a27;
-    padding: 15px;
-    border-radius: 8px;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #2d5a27; /* Verde oscuro desde el principio */
     font-weight: 700;
 }
 
 nav a:hover {
-    color: #a2d149; /* Cambia de color al pasar el mouse */
+    color: #a2d149; 
 }
 
 /* 4. IMÁGENES (Para que no queden gigantes) */
@@ -67,25 +61,6 @@ li {
    6. ESTRUCTURA DE DISEÑO (Layout)
    ========================================= */
 
-/* Alinea el Logo y el Menú enfrentados */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-/* Ajuste para que tu nav actual no se vea como una caja separada */
-nav ul {
-    background-color: transparent !important; /* Quitamos el verde de fondo si querés el look del diseño */
-    margin: 0;
-}
-
-nav a {
-    color: #2d5a27 !important; /* Links en verde */
-}
-
 /* Sección Hero: Texto e Imagen lado a lado */
 .hero {
     display: flex;
@@ -103,42 +78,11 @@ nav a {
     position: relative;
 }
 
-/* Imagen circular (Asegurate de agregar la clase 'imagen-circular' en el HTML) */
+/* Imagen circular */
 .imagen-circular {
     width: 100%;
     max-width: 450px;
     aspect-ratio: 1 / 1;
-    border-radius: 50% !important; /* Fuerza el círculo */
+    border-radius: 50%; 
     object-fit: cover;
-}
-
-/* =========================================
-   7. GRILLA DE JUEGOS Y TARJETAS
-   ========================================= */
-
-.contenedor-grilla {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Se acomoda solo según el tamaño */
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.tarjeta {
-    background-color: #e2efd9; 
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-/* Botón estilo píldora */
-.boton-principal {
-    display: inline-block;
-    background-color: #2d5a27;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    margin-top: 15px;
 }
