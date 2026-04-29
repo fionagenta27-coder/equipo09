@@ -255,3 +255,93 @@ li {
         flex-direction: column; /* El botón se pone debajo del campo de mail */
     }
 }
+/* =========================================
+   13. PÁGINA DE CONTACTO
+   ========================================= */
+
+.seccion-contacto {
+    background-color: #f1f3e8; /* Fondo beige claro */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.formulario-contacto {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left; /* Para que las etiquetas "Nombre", etc, queden a la izquierda */
+}
+
+/* Flexbox para los 4 campos de la izquierda */
+.datos-personales {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas: Nombre/Apellido y Tel/Mail */
+    gap: 20px;
+}
+
+.datos-mensaje {
+    flex: 1;
+}
+
+/* Estilo de los inputs y etiquetas */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1e3d1a;
+}
+
+.campo input, .campo textarea {
+    border: 2px solid #c5e0b4; /* Borde verde clarito */
+    border-radius: 15px;
+    padding: 12px;
+    font-family: inherit;
+    background-color: white;
+}
+
+.campo textarea {
+    height: 180px; /* Para que sea alto como en tu diseño */
+    resize: none;
+}
+
+/* Sección del Mapa */
+.mapa-seccion {
+    margin-top: 60px;
+}
+
+.mapa-seccion h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contenedor-mapa {
+    border: 5px solid #c5e0b4;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapa-img {
+    width: 100%;
+    display: block;
+    margin: 0; /* Quitamos el margen que pusimos a las img generales */
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+    .formulario-contacto {
+        flex-direction: column;
+    }
+    .datos-personales {
+        grid-template-columns: 1fr;
+    }
+}
