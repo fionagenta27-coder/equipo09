@@ -1,503 +1,78 @@
-/* 1. CONFIGURACIÓN GENERAL (Tu base mejorada) */
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #2d5a27;
-    background-color: #f9fbf9;
-    line-height: 1.6;
-    margin: 0; /* Solo dejamos el margen en 0 para quitar los bordes blancos por defecto del navegador */
-}
-
-/* 2. TÍTULOS (Jerarquía visual) */
-h1 {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #1e3d1a;               /* Verde más profundo */
-    border-bottom: 4px solid #a2d149; /* Subrayado decorativo verde lima */
-    display: inline-block;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-h2 {
-    color: #2d5a27;
-    margin-top: 30px;
-    font-size: 24px;
-}
-
-/* 3. NAVEGACIÓN (Tus links de arriba) */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #2d5a27; /* Verde oscuro desde el principio */
-    font-weight: 700;
-}
-
-nav a:hover {
-    color: #a2d149; 
-}
-
-/* 4. IMÁGENES (Para que no queden gigantes) */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
-    margin: 20px 0;
-}
-/* =========================================
-   6. ESTRUCTURA DE DISEÑO (Layout)
-   ========================================= */
-
-/* --- Ajustes específicos para el Header de la foto --- */
-
-.header-principal  {
-    background-color: #b8c98e; /* El verde oliva claro de fondo */
-    padding: 15px 0;
-}
-
-/* Estilo para el texto GREEN SKILLS */
-#logo-texto {
-    font-weight: 900;
-    font-size: 24px;
-    color: #4a5d23; /* Verde oliva oscuro */
-    letter-spacing: 1px;
-    /* ESTA ES LA LÍNEA MÁGICA */
-    margin-right: auto; 
-}
-
-/* Buscador (La barra con la lupa) */
-.search-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    margin: 0 20px;
-}
-
-.search-bar {
-    background-color: #5d7031; /* Verde oscuro */
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    padding: 5px 15px;
-    width: 200px;
-}
-
-.search-bar input {
-    background: transparent;
-    border: none;
-    color: white;
-    padding: 5px;
-    width: 100%;
-    outline: none;
-}
-
-.lupa {
-    background-color: #fcfbe3; /* Círculo crema de la lupa */
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    margin-right: 5px;
-}
-
-/* Botones de Iniciar Sesión y Registrarse */
-.btn-login, .btn-reg {
-    background-color: #5d7031; /* Verde oscuro */
-    color: #fcfbe3; /* Texto color crema */
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px; /* Forma de píldora */
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s;
-}
-
-.btn-login:hover, .btn-reg:hover {
-    background-color: #4a5d23;
-}
-
-/* Ajuste de los links del menú */
-nav#principal1 ul li a {
-    color: #000; /* Texto negro según la foto */
-    font-size: 16px;
-    text-decoration: none;
-}
-
-/* =========================================
-   7. CONTENEDOR DE CENTRADO (Base del diseño)
-   ========================================= */
-
-/* Este es el que permite que el fondo sea infinito pero el contenido esté centrado */
-.contenedor-centrado {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex; /* Flexbox para alinear logo y menú */
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* =========================================
-   8. HEADER (Flexbox aplicado al menú superior)
-   ========================================= */
-
-/* --- Ajustes específicos para el Header de la foto --- */
-
-.header-principal {
-    background-color: #b8c98e; /* El verde oliva claro de fondo */
-    padding: 15px 0;
-}
-
-/* Estilo para el texto GREEN SKILLS */
-#logo-texto {
-    font-weight: 900;
-    font-size: 24px;
-    color: #4a5d23; /* Verde oliva oscuro */
-    letter-spacing: 1px;
-}
-
-/* Buscador (La barra con la lupa) */
-.search-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    margin: 0 20px;
-}
-
-.search-bar {
-    background-color: #5d7031; /* Verde oscuro */
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    padding: 5px 15px;
-    width: 200px;
-}
-
-.search-bar input {
-    background: transparent;
-    border: none;
-    color: white;
-    padding: 5px;
-    width: 100%;
-    outline: none;
-}
-
-.lupa {
-    background-color: #fcfbe3; /* Círculo crema de la lupa */
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    margin-right: 5px;
-}
-
-/* Botones de Iniciar Sesión y Registrarse */
-.btn-login, .btn-reg {
-    background-color: #5d7031; /* Verde oscuro */
-    color: #fcfbe3; /* Texto color crema */
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px; /* Forma de píldora */
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s;
-}
-
-.btn-login:hover, .btn-reg:hover {
-    background-color: #4a5d23;
-}
-
-/* Ajuste de los links del menú */
-nav#principal1 ul li a {
-    color: #000; /* Texto negro según la foto */
-    font-size: 16px;
-    text-decoration: none;
-}
-
-/* =========================================
-   9. SECCIONES DE COLOR (Fondos infinitos)
-   ========================================= */
-
-.seccion-hero {
-    background-color: #f1f3e8; /* El beige de tu borrador */
-}
-
-.seccion-recursos {
-    background-color: #c5e0b4; /* Verde intermedio */
-    padding: 40px 0;
-}
-
-/* Flexbox para los botones de Recursos */
-.botones-recursos {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.pildora-oscura {
-    background-color: #548235;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-/* =========================================
-   10. FOOTER (Flexbox para el Newsletter)
-   ========================================= */
-
-.newsletter {
-    background-color: #a2d149;
-    padding: 30px 0;
-}
-
-/* Flexbox para que el texto y el mail estén enfrentados */
-.newsletter .contenedor-centrado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.input-group {
-    display: flex;
-    gap: 10px;
-}
-
-.footer-datos {
-    background-color: #2d5a27; /* Verde oscuro final */
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-}
-
-/* =========================================
-   11. GRILLA DE JUEGOS
-   ========================================= */
-
-.contenedor-grilla {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 50px;
-}
-
-.tarjeta {
-    background-color: #e2efd9;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-}
-/* =========================================
-   12. PÁGINA DE CONTACTO
-   ========================================= */
-
-.seccion-contacto {
-    background-color: #f1f3e8; /* Fondo beige claro */
-    padding: 60px 0;
-    text-align: center;
-}
-
-.formulario-contacto {
-    display: flex;
-    gap: 40px;
-    margin-top: 40px;
-    text-align: left; /* Para que las etiquetas "Nombre", etc, queden a la izquierda */
-}
-
-/* Flexbox para los 4 campos de la izquierda */
-.datos-personales {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas: Nombre/Apellido y Tel/Mail */
-    gap: 20px;
-}
-
-.datos-mensaje {
-    flex: 1;
-}
-
-/* Estilo de los inputs y etiquetas */
-.campo {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.campo label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #1e3d1a;
-}
-
-.campo input, .campo textarea {
-    border: 2px solid #c5e0b4; /* Borde verde clarito */
-    border-radius: 15px;
-    padding: 12px;
-    font-family: inherit;
-    background-color: white;
-}
-
-.campo textarea {
-    height: 180px; /* Para que sea alto como en tu diseño */
-    resize: none;
-}
-
-/* Sección del Mapa */
-.mapa-seccion {
-    margin-top: 60px;
-}
-
-.mapa-seccion h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.contenedor-mapa {
-    border: 5px solid #c5e0b4;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mapa-img {
-    width: 100%;
-    display: block;
-    margin: 0; /* Quitamos el margen que pusimos a las img generales */
-}
-
-/* Ajuste para celular */
-@media (max-width: 768px) {
-    .formulario-contacto {
-        flex-direction: column;
-    }
-    .datos-personales {
-        grid-template-columns: 1fr;
-    }
-}
-/* Contenedor padre de la derecha */
-.hero-derecha {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: 50px; /* Espacio para que no choque con el texto */
-}
-
-/* El cuadro verde de beneficios */
-.cuadro-beneficios {
-    background-color: #c5e0b4; /* Verde clarito */
-    padding: 40px 60px 40px 40px; /* Más espacio a la derecha para que el plato apoye */
-    border-radius: 40px;
-    min-width: 280px;
-    z-index: 1; /* Queda atrás */
-}
-
-.cuadro-beneficios h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #1e3d1a;
-}
-
-.cuadro-beneficios ul li {
-    list-style: none; /* Quitamos los emojis anteriores */
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.cuadro-beneficios ul li::before {
-    content: "• "; /* Punto simple como en la foto 2 */
-    color: #1e3d1a;
-}
-
-/* La imagen del plato con el efecto de superposición */
-.imagen-plato {
-    width: 450px; /* Tamaño grande como en tu diseño */
-    height: auto;
-    border-radius: 50%; /* Asegura que sea circular */
-    box-shadow: 20px 20px 40px rgba(0,0,0,0.2); /* Sombra profunda para que parezca real */
-    margin-left: -80px; /* EL TRUCO: margen negativo para que se meta dentro del cuadro verde */
-    z-index: 2; /* Queda adelante */
-    position: relative;
-}
-
-/* Ajuste para que el texto de la izquierda sea más grande */
-.hero-texto h1 {
-    font-size: 4rem;
-    color: #1e3d1a;
-    border: none; /* Quitamos la línea de abajo para que sea igual a la foto 2 */
-}
-
-.hero-texto h1 span {
-    color: #a2d149; /* Color verde lima para "cocinar verde" */
-}
-/* --- Ajustes de Fuente y Base --- */
-body { font-family: 'Roboto', sans-serif; background-color: #fcfbe3; margin: 0; }
-.contenedor-centrado { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; }
-
-/* --- HEADER: El secreto del espacio --- */
-.header-principal { background-color: #b8c98e; padding: 15px 0; }
-.header-flex { justify-content: space-between; } /* Separa logo de header-derecha */
-
-.header-derecha { display: flex; align-items: center; gap: 25px; }
-
-#logo-texto { font-weight: 900; font-size: 24px; color: #4a5d23; }
-
-nav#principal1 ul { display: flex; list-style: none; gap: 20px; padding: 0; margin: 0; }
-nav#principal1 ul li a { text-decoration: none; color: #000; font-weight: bold; }
-
-.search-bar { background: #5d7031; border-radius: 20px; padding: 5px 15px; display: flex; align-items: center; }
-.search-bar input { background: transparent; border: none; color: white; outline: none; padding-left: 5px; }
-
-.btn-login, .btn-reg { background: #5d7031; color: white; border: none; padding: 8px 18px; border-radius: 20px; font-weight: bold; cursor: pointer; }
-
-/* --- HERO: Superposición del plato --- */
-.seccion-hero { padding: 80px 0; }
-.hero-flex { justify-content: space-between; position: relative; }
-.hero-texto { max-width: 45%; }
-.hero-texto h1 { font-size: 4rem; color: #1e3d1a; line-height: 1.1; }
+/* --- BASE --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', sans-serif; background-color: #fcfbe3; color: #2d5a27; line-height: 1.4; }
+.contenedor-centrado { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* --- HEADER --- */
+.header-principal { background-color: #b8c98e; padding: 10px 0; }
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+#logo-texto { font-weight: 900; font-size: 22px; color: #4a5d23; }
+.header-derecha { display: flex; align-items: center; gap: 20px; }
+
+nav ul { display: flex; list-style: none; gap: 15px; }
+nav a { text-decoration: none; color: #000; font-weight: bold; font-size: 14px; }
+
+.search-bar { background: #5d7031; border-radius: 20px; padding: 5px 12px; display: flex; align-items: center; width: 180px; }
+.search-bar input { background: transparent; border: none; color: white; width: 100%; outline: none; font-size: 12px; }
+.lupa { background: #fcfbe3; border-radius: 50%; padding: 2px 5px; margin-right: 5px; font-size: 10px; }
+
+.btn-login, .btn-reg { background: #5d7031; color: white; border: none; padding: 8px 18px; border-radius: 20px; font-weight: bold; cursor: pointer; font-size: 12px; }
+
+/* --- HERO --- */
+.seccion-hero { padding: 60px 0; position: relative; }
+.hero-flex { display: flex; align-items: center; justify-content: space-between; }
+.hero-texto { max-width: 400px; }
+.hero-texto h1 { font-size: 3.5rem; color: #1e3d1a; line-height: 1; margin-bottom: 20px; }
 .hero-texto h1 span { color: #5d7031; }
+.hero-texto p { margin-bottom: 25px; font-size: 16px; }
+.boton-principal { background: #5d7031; color: white; text-decoration: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; }
 
 .hero-visual { display: flex; align-items: center; position: relative; }
+.cuadro-beneficios { background: #c5e0b4; padding: 30px 60px 30px 30px; border-radius: 30px; z-index: 1; min-width: 250px; }
+.cuadro-beneficios h3 { margin-bottom: 10px; font-size: 18px; }
+.cuadro-beneficios ul { list-style: none; font-size: 14px; }
+.cuadro-beneficios li::before { content: "• "; color: #1e3d1a; font-weight: bold; }
 
-.cuadro-beneficios { 
-    background-color: #c5e0b4; 
-    padding: 30px 50px 30px 30px; 
-    border-radius: 30px; 
-    z-index: 1; 
-}
+.plato-overlap { width: 380px; height: 380px; border-radius: 50%; object-fit: cover; margin-left: -100px; z-index: 2; box-shadow: 15px 15px 30px rgba(0,0,0,0.1); }
 
-.plato-overlap { 
-    width: 400px; 
-    height: 400px; 
-    object-fit: cover;
-    border-radius: 50%; 
-    margin-left: -80px; /* Hace que el plato se meta en el cuadro verde */
-    z-index: 2; 
-    box-shadow: 15px 15px 30px rgba(0,0,0,0.15); 
-}
+/* --- RECURSOS --- */
+.seccion-recursos { background-color: #b8c98e; padding: 40px 0; }
+.recursos-flex { display: flex; justify-content: space-between; align-items: center; }
+.pildora-oscura { background: #5d7031; color: white; border: none; padding: 15px 30px; border-radius: 12px; font-weight: bold; font-size: 18px; cursor: pointer; }
+.botones-recursos { display: flex; gap: 15px; }
 
-/* --- RECURSOS: Sección inferior --- */
-.seccion-recursos { background-color: #b8c98e; padding: 50px 0; }
-.recursos-flex { justify-content: space-between; }
-.pildora-oscura { 
-    background: #5d7031; color: white; border: none; 
-    padding: 15px 35px; border-radius: 15px; 
-    font-size: 1.2rem; font-weight: bold; margin-left: 15px; 
-}
+/* --- TALLERES --- */
+.seccion-talleres { padding: 60px 0; }
+.talleres-layout { display: grid; grid-template-columns: 250px 1fr; gap: 40px; }
+.item-fecha { margin-bottom: 20px; border-left: 3px solid #f2994a; padding-left: 10px; }
+.item-fecha strong { color: #f2994a; font-size: 20px; display: block; }
+
+.grilla-talleres { display: flex; gap: 20px; }
+.tarjeta-taller { background: #e2efd9; border-radius: 40px 40px 15px 15px; padding: 0 0 20px 0; text-align: center; flex: 1; }
+.tarjeta-taller img { width: 100%; height: 150px; object-fit: cover; border-radius: 40px 40px 0 0; margin-bottom: 10px; }
+.tarjeta-taller h3 { font-size: 16px; padding: 0 10px; }
+.tarjeta-taller p { font-size: 12px; padding: 5px 15px; }
+
+/* --- JUEGOS --- */
+.seccion-juegos { padding: 60px 0; text-align: center; }
+.titulo-juegos h2 span { color: #f2994a; }
+.grilla-juegos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
+.tarjeta-juego { background: #c5e0b4; border-radius: 15px; padding: 15px; text-align: left; }
+.img-container { height: 150px; overflow: hidden; border-radius: 10px; margin-bottom: 10px; }
+.img-container img { width: 100%; height: 100%; object-fit: cover; }
+.tarjeta-juego h4 { font-size: 16px; margin-bottom: 10px; }
+.tarjeta-juego p { font-size: 13px; margin-bottom: 15px; min-height: 50px; }
+.tarjeta-juego a { text-decoration: none; color: #2d5a27; font-weight: bold; font-size: 11px; }
+
+/* --- FOOTER --- */
+.newsletter { background-color: #b8c98e; padding: 30px 0; border-top: 1px solid #9fb375; }
+.news-flex { display: flex; justify-content: space-between; align-items: center; }
+.input-group { display: flex; gap: 10px; }
+.input-group input { padding: 10px; border-radius: 10px; border: none; width: 250px; }
+.btn-footer { background: #fcfbe3; border: none; padding: 10px 20px; border-radius: 10px; font-weight: bold; cursor: pointer; color: #5d7031; }
+
+.footer-datos { background-color: #b8c98e; padding: 40px 0; border-top: 1px solid #9fb375; font-size: 14px; }
+.footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+.footer-links { display: flex; flex-direction: column; text-align: left; gap: 5px; }
+.footer-links a { text-decoration: none; color: #2d5a27; }
+.footer-redes .iconos-redes { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
