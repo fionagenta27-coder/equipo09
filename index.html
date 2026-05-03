@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 1. HEADER: Con separación de logo y menú -->
     <header class="header-principal">
         <div class="contenedor-centrado header-flex">
             <div id="logo-texto">GREEN SKILLS</div>
-            
             <div class="header-derecha">
                 <nav id="principal1">
                     <ul>
@@ -32,12 +30,9 @@
                     <button class="btn-login">Iniciar sesión</button>
                     <button class="btn-reg">Registrarse</button>
                 </div>
-            </div>
-        </div>
     </header>
 
     <main>
-        <!-- 2. HERO: Efecto de superposición del plato -->
         <section class="seccion-hero">
             <div class="contenedor-centrado hero-flex">
                 <div class="hero-texto">
@@ -45,22 +40,22 @@
                     <p>Explorá ingredientes y técnicas de la cocina vegetariana mientras aprendés de manera práctica y dinámica.</p>
                     <a href="#" class="boton-principal">Empezar ahora</a>
                 </div>
-                
                 <div class="hero-visual">
                     <aside class="cuadro-beneficios">
                         <h3>Beneficios del plato</h3>
                         <ul>
                             <li>Vitamina C</li>
                             <li>Fibra</li>
-                            <li>Antioxidantes</li>
                             <li>Hierro vegetal</li>
+                            <li>Antioxidantes</li>
+                            <li>Proteínas</li>
+                            <li>Carbohidratos</li>
                         </ul>
                     </aside>
                     <img src="fotos/plato principal.png" alt="Plato saludable" class="plato-overlap">
-            </div>
+                </div>
         </section>
 
-        <!-- 3. RECURSOS: Franja verde con botones oscuros -->
         <section class="seccion-recursos">
             <div class="contenedor-centrado recursos-flex">
                 <div class="texto-recursos">
@@ -69,58 +64,98 @@
                 </div>
                 <div class="botones-recursos">
                     <button class="pildora-oscura">Tutoriales</button>
+                    <button class="pildora-oscura">Guías</button>
                     <button class="pildora-oscura">Recetas</button>
                     <button class="pildora-oscura">Ingredientes</button>
-            </div>
+                </div>
         </section>
 
-        <!-- 4. TALLERES Y JUEGOS: Contenido centrado -->
-        <div class="contenedor-centrado">
-            <section id="talleres">
-                <h2>Talleres y Charlas</h2>
-                <div class="contenedor-grilla">
+        <section class="seccion-talleres contenedor-centrado">
+            <div class="talleres-layout">
+                <div class="lista-fechas">
+                    <h2>Talleres y Charlas</h2>
+                    <div class="item-fecha"><strong>17 mar</strong> <p>Charla sobre nutrición y alimentos sustentables</p></div>
+                    <div class="item-fecha"><strong>20 mar</strong> <p>Charla sobre introducción al veganismo</p></div>
+                    <div class="item-fecha"><strong>3 abr</strong> <p>Taller Presencial "7 días detox natural"</p></div>
+                </div>
+                <div class="grilla-talleres">
                     <article class="tarjeta-taller">
+                        <img src="fotos/ensalada1.jpg" alt="Ensalada">
                         <h3>Ensalada Mediterránea</h3>
-                        <img src="fotos/ensalda.jpg" alt="Ensalada fresca">
-                        <p>Atún fresco con hojas verdes.</p>
+                        <p>Atún fresco con hojas verdes, tomate cherry y pepino.</p>
                     </article>
-                    <!-- Aquí podés sumar más talleres -->
+                    <article class="tarjeta-taller">
+                        <img src="fotos/ensalada2.jpg" alt="Ensalada">
+                        <h3>Ensalada César</h3>
+                        <p>Croutones, tomate, huevo y hojas frescas.</p>
+                    </article>
+                    <article class="tarjeta-taller">
+                        <img src="fotos/ensalada3.jpg" alt="Ensalada">
+                        <h3>Ensalada Clásica</h3>
+                        <p>Mix de verdes con lechuga, palta cremosa y semillas.</p>
+                    </article>
                 </div>
-            </section>
+        </section>
 
-            <section id="juegos">
-                <h2>Ponete a prueba</h2>
-                <p>Desafía lo que sabés y aprendé algo nuevo en cada juego.</p>
-                <div class="contenedor-grilla">
-                    <article class="tarjeta">
-                        <h3>El Plato Perfecto</h3>
-                        <p>Armá tu combinación ideal y compartila.</p>
-                    </article> AGREGA MAS INFO 
-                    <!-- Aquí sumás las otras 3 tarjetas de juegos -->
+        <section class="seccion-juegos">
+            <div class="contenedor-centrado">
+                <div class="titulo-juegos">
+                    <h2>Ponete a <span>prueba</span></h2>
+                    <p>Desafiá lo que sabés y aprendé algo nuevo en cada juego.</p>
                 </div>
-            </section>
-        </div>
+                <div class="grilla-juegos">
+                    <article class="tarjeta-juego">
+                        <div class="img-container"><img src="fotos/juego1.jpg" alt="Juego 1"></div>
+                        <h4>El Plato Perfecto</h4>
+                        <p>Armá un plato vegetariano eligiendo distintos ingredientes.</p>
+                        <a href="#">DESCUBRIR ></a>
+                    </article>
+                    <article class="tarjeta-juego">
+                        <div class="img-container"><img src="fotos/juego2.jpg" alt="Juego 2"></div>
+                        <h4>Verdadero o falso</h4>
+                        <p>Poné a prueba lo que sabés sobre la alimentación vegetariana.</p>
+                        <a href="#">COMENZAR A APRENDER ></a>
+                    </article>
+                    <article class="tarjeta-juego">
+                        <div class="img-container"><img src="fotos/juego3.jpg" alt="Juego 3"></div>
+                        <h4>Desafío Express</h4>
+                        <p>Respondé preguntas rápidas antes de que se acabe el tiempo.</p>
+                        <a href="#">VER AHORA ></a>
+                    </article>
+                    <article class="tarjeta-juego">
+                        <div class="img-container"><img src="fotos/juego4.jpg" alt="Juego 4"></div>
+                        <h4>¿Qué Cocinarías Hoy?</h4>
+                        <p>Contestá preguntas sobre tus gustos y descubrí tu receta ideal.</p>
+                        <a href="#">VER AHORA ></a>
+                    </article>
+                </div>
+        </section>
     </main>
 
-    <!-- 5. FOOTER: Estructura doble como tu dibujo -->
     <footer class="footer-total">
         <div class="newsletter">
-            <div class="contenedor-centrado">
+            <div class="contenedor-centrado news-flex">
                 <div class="texto-news">
                     <h3>Suscribite a nuestro Newsletter</h3>
-                    <p>Recibí recetas y novedades en tu mail.</p>
+                    <p>Recibí recetas y novedades a tu mail. ¡Te ayudamos a organizarte!</p>
                 </div>
                 <div class="input-group">
                     <input type="email" placeholder="Dirección de mail">
                     <button class="btn-footer">Suscribirse</button>
                 </div>
         <div class="footer-datos">
-            <div class="contenedor-centrado">
-                <p>© 2026 Green Skills - Tecno UB</p>
-                <div class="redes">
-                    <!-- Aquí irían tus iconos -->
-                    <span>Seguinos en redes</span> CAMBIALO POR T
+            <div class="contenedor-centrado footer-grid">
+                <div class="footer-links">
+                    <a href="#">Aviso legal y términos de uso</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Mirá las recetas en nuestra página</a>
                 </div>
-    </footer>
-</body>
-</html>
+                <div class="footer-contacto">
+                    <p>+54 9 11 25153366</p>
+                    <p>Escribinos por <strong>WhatsApp</strong></p>
+                </div>
+                <div class="footer-redes">
+                    <p>¡Seguinos en nuestras redes!</p>
+                    <div class="iconos-redes">
+                        <span>FB</span> <span>YT</span> <span>IG</span> <span>TK</span>
+                    </div>
