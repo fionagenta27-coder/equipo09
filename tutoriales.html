@@ -4,80 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Skills - Tutoriales</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div id="logo">
-            <img src="fotos/logogs.png" alt="Logo Green Skills" width="150">
+    <header class="header-principal">
+        <div class="contenedor-centrado header-flex">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="fotos/logogs.png" alt="Logo Green Skills" width="100" style="mix-blend-mode: multiply;">
+                </a>
+            </div>
+            
+            <nav id="principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <nav id="principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="tutoriales.html">Tutoriales</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="presentacion-video">
-            <h1>Tutoriales de Cocina Verde</h1>
-            <p>Explorá técnicas de la cocina vegetariana de manera práctica.</p>
-            
-            <div class="video-contenedor">
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/Tx3xoCThDbE?si=M69mIuwTlBG75ht9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
+        <div class="contenedor-centrado">
+            <section class="seccion-tutoriales" id="presentacion-video">
+                <div class="encabezado-seccion">
+                    <h1>Tutoriales de Cocina Verde</h1>
+                    <p>Explorá técnicas de la cocina vegetariana de manera práctica.</p>
+                </div>
+                
+                <div class="video-contenedor">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/Tx3xoCThDbE?si=M69mIuwTlBG75ht9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
 
-        <section id="recursos">
-            <h2>Recursos y materiales</h2>
-            
-            <article>
-                <h3>Guías de técnicas</h3>
-                <p>Aprendé los cortes básicos para aprovechar al máximo tus vegetales.</p>
-             
-            </article>
+            <section class="seccion-recursos" id="recursos">
+                <div class="encabezado-seccion">
+                    <h2>Recursos y materiales</h2>
+                </div>
+                
+                <div class="recursos-grid">
+                    <article class="cuadro-beneficios">
+                        <h3>Guías de técnicas</h3>
+                        <p>Aprendé los cortes básicos para aprovechar al máximo tus vegetales.</p>
+                    </article>
 
-            <article>
-                <h3>Recetario Saludable</h3>
-                <p>Descargá nuestras guías paso a paso para cocinar en casa.</p>
-          
-            </article>
-        </section>
-
-        <aside>
-            <h3>Beneficios del plato</h3>
-            <ul>
-                <li>Vitamina C y Fibra</li>
-                <li>Hierro vegetal</li>
-                <li>Proteínas naturales</li>
-            </ul>
-        </aside>
+                    <article class="cuadro-beneficios">
+                        <h3>Recetario Saludable</h3>
+                        <p>Descargá nuestras guías paso a paso para cocinar en casa.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <section id="info-contacto">
-            <h4>Contacto</h4>
-            <p>WhatsApp: +54 9 11 25153366</p>
-            <p>Email: greenskills@gmail.com</p>
-        </section>
-
-        <section id="redes">
-            <h4>¡Seguinos en nuestras redes!</h4>
-            <a href="https://www.instagram.com/ecocina._/" target="_blank" rel="noopener">
-                <img src="fotos/logogs.png" alt="Instagram de Ecocina" width="30">
-                <span>@ecocina._</span>
-            </a>
-        </section>
-
-        <div id="copyright"> SOLO PARRAFO SACAR COPYRIGHT
-            <p>© 2026 Green Skills - Universidad de Belgrano</p>
+    <footer class="footer-total">
+        <div class="footer-datos">
+            <div class="contenedor-centrado">
+                <p>© 2026 Green Skills - Tecno UB</p>
+                <div class="redes">
+                    <a href="https://www.instagram.com/ecocina._/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+                        <span>Seguinos en @ecocina._</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
