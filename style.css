@@ -378,3 +378,102 @@ figure img {
     gap: 10px; 
     margin-top: 10px; 
 }
+/* --- 8. ESTILOS COMPARTIDOS (TUTORIALES Y CONTACTO) --- */
+.encabezado-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.encabezado-seccion h1 {
+    font-size: 2.5rem;
+    color: #1e3d1a;
+    margin-bottom: 10px;
+}
+
+/* --- 9. SECCIÓN TUTORIALES --- */
+.seccion-tutoriales {
+    padding: 60px 0;
+}
+.video-contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.video-contenedor iframe {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    max-width: 100%;
+}
+.recursos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* --- 10. SECCIÓN CONTACTO --- */
+.seccion-contacto {
+    padding: 60px 0;
+}
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea las dos columnas */
+    gap: 40px;
+    background-color: #e2efd9; /* Fondo suave para el formulario */
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1e3d1a;
+}
+.campo input, .campo textarea {
+    padding: 12px;
+    border: 1px solid #b8c98e;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+.campo input:focus, .campo textarea:focus {
+    border-color: #5d7031;
+}
+.datos-mensaje {
+    display: flex;
+    flex-direction: column;
+}
+.datos-mensaje .campo {
+    flex-grow: 1; /* Hace que el textarea ocupe todo el alto disponible */
+    margin-bottom: 15px;
+}
+.campo textarea {
+    resize: none;
+    height: 100%;
+    min-height: 180px;
+}
+.btn-enviar {
+    cursor: pointer;
+    border: none;
+    align-self: flex-start; /* Para que el botón no se estire */
+}
+.mapa-seccion {
+    text-align: center;
+    margin-top: 40px;
+}
+.mapa-seccion h2 {
+    color: #1e3d1a;
+    margin-bottom: 10px;
+}
+.contenedor-mapa {
+    margin-top: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
