@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Skills - Contacto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +11,7 @@
     <header class="header-principal">
         <div class="contenedor-centrado header-flex">
             <div id="logo">
-                <a href="index.html">
-                    <img src="fotos/logogs.png" alt="Logo Green Skills" width="100" style="mix-blend-mode: multiply;"> 
-                </a>
+                <img src="fotos/logogs.png" alt="Logo Green Skills" width="100" style="mix-blend-mode: multiply;">
             </div>
             <nav id="principal">
                 <ul>
@@ -24,64 +19,48 @@
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="tutoriales.html">Tutoriales</a></li>
                 </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="seccion-contacto">
-            <div class="contenedor-centrado">
-                <div class="encabezado-seccion">
-                    <h1>Contactanos</h1>
-                    <p>Introducí tus datos y dejanos todas tus consultas.</p>
-                    <p><strong>¡En breve te respondemos!</strong></p>
-                </div>
+    <main class="contenedor-centrado">
+        <section class="contacto-flex">
+            <!-- Izquierda: Info -->
+            <div class="contacto-info">
+                <h1>Contactanos</h1>
+                <p>Introducí tus datos y dejanos todas tus consultas. ¡En breve te respondemos!</p>
+                
+                <div class="info-item">📍 Sede Principal: Av Jorge Newbery 1624, CABA</div>
+                <div class="info-item">✉️ greenskills@gmail.com</div>
+                <div class="info-item">📞 +54 9 11 25153366</div>
+            </div>
 
-                <form class="formulario-contacto">
-                    <!-- Columna izquierda: Datos -->
-                    <div class="datos-personales">
-                        <div class="campo">
-                            <label>Nombre</label>
-                            <input type="text" name="nombre" required>
-                        </div>
-                        <div class="campo">
-                            <label>Apellido</label>
-                            <input type="text" name="apellido" required>
-                        </div>
-                        <div class="campo">
-                            <label>Teléfono</label>
-                            <input type="tel" name="telefono">
-                        </div>
-                        <div class="campo">
-                            <label>Mail</label>
-                            <input type="email" name="email" required>
-                        </div>
-                    </div>
-
-                    <!-- Columna derecha: Mensaje -->
-                    <div class="datos-mensaje">
-                        <div class="campo">
-                            <label>Mensaje o consulta</label>
-                            <textarea name="mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="boton-principal btn-enviar">Enviar Mensaje</button>
-                    </div>
+            <!-- Derecha: Formulario -->
+            <div class="contacto-form-container">
+                <h2>Mandanos un mensaje</h2>
+                <form class="formulario-grid">
+                    <div class="campo"><label>Nombre</label><input type="text"></div>
+                    <div class="campo"><label>Teléfono</label><input type="tel"></div>
+                    <div class="campo"><label>Apellido</label><input type="text"></div>
+                    <div class="campo"><label>Mail</label><input type="email"></div>
+                    <div class="campo full-width"><label>Mensaje o consulta</label><textarea></textarea></div>
+                    <button type="submit" class="boton-principal">Enviar</button>
                 </form>
+            </div>
+        </section>
 
-                <div class="mapa-seccion">
-                    <h2>¿Dónde nos encontramos?</h2>
-                    <p>📍 Av Jorge Newbery 1624, CABA</p>
-                    <div class="contenedor-mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6571.122758801132!2d-58.44858742306607!3d-34.56465938374606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb53cca9ad69d%3A0xb318e0522561bce4!2sNomada%20ca%C3%B1itas%20(N1)!5e0!3m2!1sen!2sar!4v1775600800406!5m2!1sen!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+        <section class="mapa-seccion">
+            <h2>¿Dónde nos encontramos?</h2>
+            <div class="contenedor-mapa">
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
     </main>
 
     <footer class="footer-total">
         <div class="footer-datos">
-            <div class="contenedor-centrado" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="contenedor-centrado footer-flex-final">
                 <p>© 2026 Green Skills - Tecno UB</p>
-                <div class="redes">
-                    <a href="https://www.instagram.com/ecocina._/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; font-weight: bold;">
-                        <span>Seguinos en @ecocina._</span>
-                    </a>
-    
+                <div class="redes">Seguinos en @ecocina._</div>
+            </div>
+ 
