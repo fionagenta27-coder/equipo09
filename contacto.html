@@ -11,11 +11,12 @@
 </head>
 <body>
 
-    <!-- Mantenemos el Header con la clase para el fondo verde lima -->
     <header class="header-principal">
-        <div class="contenedor-centrado">
+        <div class="contenedor-centrado header-flex">
             <div id="logo">
-                <img src="fotos/logogs.png" alt="Logo Green Skills" width="150"> SACAR FONDO BLANCO Y ACHICAR 
+                <a href="index.html">
+                    <img src="fotos/logogs.png" alt="Logo Green Skills" width="100" style="mix-blend-mode: multiply;"> 
+                </a>
             </div>
             <nav id="principal">
                 <ul>
@@ -23,17 +24,15 @@
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="tutoriales.html">Tutoriales</a></li>
                 </ul>
-            </nav>
         </div>
     </header>
 
     <main>
-        <!-- REEMPLAZO TOTAL SEGÚN Screenshot 2026-04-29 at 9.50.33 AM.png -->
         <section class="seccion-contacto">
             <div class="contenedor-centrado">
-                <div class="encabezado-contacto">
+                <div class="encabezado-seccion">
                     <h1>Contactanos</h1>
-                    <p>introduci tus datos y dejanos todas tus consultas</p>
+                    <p>Introducí tus datos y dejanos todas tus consultas.</p>
                     <p><strong>¡En breve te respondemos!</strong></p>
                 </div>
 
@@ -42,11 +41,11 @@
                     <div class="datos-personales">
                         <div class="campo">
                             <label>Nombre</label>
-                            <input type="text" name="nombre">
+                            <input type="text" name="nombre" required>
                         </div>
                         <div class="campo">
                             <label>Apellido</label>
-                            <input type="text" name="apellido">
+                            <input type="text" name="apellido" required>
                         </div>
                         <div class="campo">
                             <label>Teléfono</label>
@@ -54,7 +53,7 @@
                         </div>
                         <div class="campo">
                             <label>Mail</label>
-                            <input type="email" name="email">
+                            <input type="email" name="email" required>
                         </div>
                     </div>
 
@@ -62,34 +61,27 @@
                     <div class="datos-mensaje">
                         <div class="campo">
                             <label>Mensaje o consulta</label>
-                            <textarea name="mensaje"></textarea>
+                            <textarea name="mensaje" required></textarea>
                         </div>
+                        <button type="submit" class="boton-principal btn-enviar">Enviar Mensaje</button>
                     </div>
                 </form>
 
-                <!-- Sección del Mapa corregida -->
                 <div class="mapa-seccion">
                     <h2>¿Dónde nos encontramos?</h2>
                     <p>📍 Av Jorge Newbery 1624, CABA</p>
                     <div class="contenedor-mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6571.122758801132!2d-58.44858742306607!3d-34.56465938374606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb53cca9ad69d%3A0xb318e0522561bce4!2sNomada%20ca%C3%B1itas%20(N1)!5e0!3m2!1sen!2sar!4v1775600800406!5m2!1sen!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                </div>
-            </div>
         </section>
     </main>
 
-    <!-- Footer actualizado para que coincida con el index -->
     <footer class="footer-total">
         <div class="footer-datos">
-            <div class="contenedor-centrado">
+            <div class="contenedor-centrado" style="display: flex; justify-content: space-between; align-items: center;">
                 <p>© 2026 Green Skills - Tecno UB</p>
                 <div class="redes">
-                    <span>Seguinos en @ecocina._</span> CAMBIAC
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                    <a href="https://www.instagram.com/ecocina._/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; font-weight: bold;">
+                        <span>Seguinos en @ecocina._</span>
+                    </a>
+    
