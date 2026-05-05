@@ -4,63 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Skills - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="header-principal">
         <div class="contenedor-centrado header-flex">
-            <div id="logo">
-                <img src="fotos/logogs.png" alt="Logo Green Skills" width="100" style="mix-blend-mode: multiply;">
+            <div id="logo" style="display: flex; align-items: center; gap: 10px;">
+                <a href="index.html">
+                    <img src="fotos/logogs.png" alt="Logo Green Skills" width="60" style="mix-blend-mode: multiply;">
+                </a>
+                <span id="logo-texto">GREEN SKILLS</span>
             </div>
             <nav id="principal">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Profesores</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="tutoriales.html">Tutoriales</a></li>
                 </ul>
             </nav>
-        </div>
+            <div class="header-derecha">
+                <div class="search-bar">
+                    <span class="lupa">🔍</span>
+                    <input type="text">
+                </div>
+                <button class="btn-login">Iniciar sesión</button>
+                <button class="btn-reg">Registrarse</button>
+            </div>
     </header>
+
+    <section class="hero-contacto-img">
+        <img src="fotos/contacto-hero.jpg" alt="Ensaladas saludables">
+    </section>
 
     <main class="contenedor-centrado">
         <section class="contacto-flex">
-            <!-- Izquierda: Info -->
             <div class="contacto-info">
-                <h1>Contactanos</h1>
-                <p>Introducí tus datos y dejanos todas tus consultas. ¡En breve te respondemos!</p>
+                <h1 class="titulo-contacto">Contactanos</h1>
+                <p class="bajada-contacto">Introducí tus datos y dejanos todas tus consultas. <br>¡En breve te respondemos!</p>
                 
-                <div class="info-item">📍 Sede Principal: Av Jorge Newbery 1624, CABA</div>
-                <div class="info-item">✉️ greenskills@gmail.com</div>
-                <div class="info-item">📞 +54 9 11 25153366</div>
-            </div>
+                <div class="info-bloque">
+                    <div class="icono-circular">📍</div>
+                    <div class="texto-bloque">
+                        <strong>Sede Principal</strong>
+                        <p>Av Jorge Newbery 1624, CABA</p>
+                    </div>
 
-            <!-- Derecha: Formulario -->
+                <div class="info-bloque">
+                    <div class="icono-circular">✉️</div>
+                    <div class="texto-bloque">
+                        <strong>Nuestro email</strong>
+                        <p>greenskills@gmail.com<br>greenskillsconsultas@yahoo.com</p>
+                    </div>
+                </div>
+
+                <div class="info-bloque">
+                    <div class="icono-circular">📞</div>
+                    <div class="texto-bloque">
+                        <strong>Nuestro numero</strong>
+                        <p>+54 9 11 25153366</p>
+                    </div>
+
+                <div class="redes-contacto">
+                    <p>!Seguinos en nuestras redes!</p>
+                    <div class="iconos-redes-naranja">
+                        <span class="circulo-red">📸</span>
+                        <span class="circulo-red">𝕏</span>
+                        <span class="circulo-red">f</span>
+                        <span class="circulo-red">▶</span>
+                    </div>
+
             <div class="contacto-form-container">
-                <h2>Mandanos un mensaje</h2>
+                <h2 class="subrayado-naranja">Mandanos un mensaje</h2>
                 <form class="formulario-grid">
-                    <div class="campo"><label>Nombre</label><input type="text"></div>
-                    <div class="campo"><label>Teléfono</label><input type="tel"></div>
-                    <div class="campo"><label>Apellido</label><input type="text"></div>
-                    <div class="campo"><label>Mail</label><input type="email"></div>
-                    <div class="campo full-width"><label>Mensaje o consulta</label><textarea></textarea></div>
-                    <button type="submit" class="boton-principal">Enviar</button>
-                </form>
-            </div>
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input type="text">
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input type="tel">
+                    </div>
+                    <div class="campo">
+                        <label>Apellido</label>
+                        <input type="text">
+                    </div>
+                    <div class="campo">
+                        <label>Mail</label>
+                        <input type="email">
+                    </div>
+                    <div class="campo full-width">
+                        <label>Mensaje o consulta</label>
+                        <textarea></textarea>
+                    </div>
         </section>
 
         <section class="mapa-seccion">
-            <h2>¿Dónde nos encontramos?</h2>
+            <div class="encabezado-mapa">
+                <h2>¿Dónde nos encontramos?</h2>
+                <p>📍 Av Jorge Newbery 1624, CABA</p>
+            </div>
             <div class="contenedor-mapa">
-                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.234567!2d-58.441!3d-34.571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM0JzE1LjYiUyA1OMKwMjYnMjcuNiJX!5e0!3m2!1ses!2sar!4v1620000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>
 
-    <footer class="footer-total">
-        <div class="footer-datos">
-            <div class="contenedor-centrado footer-flex-final">
-                <p>© 2026 Green Skills - Tecno UB</p>
-                <div class="redes">Seguinos en @ecocina._</div>
+    <footer class="newsletter">
+        <div class="contenedor-centrado news-flex">
+            <div class="news-texto">
+                <h3>Suscribite a nuestro Newsletter</h3>
+                <p>Recibí recetas y novedades a tu mail. ¡Te ayudamos a organizarte y aprender!</p>
             </div>
+            <div class="input-group">
+                <input type="email" placeholder="Dirección de mail">
+                <button class="btn-footer">Suscribirse</button>
+            </div>
+    </footer>
+
+    <footer class="footer-final-verde">
+        <div class="contenedor-centrado grid-footer-final">
+            <div class="links-legales">
+                <a href="#">Aviso legal y términos de uso del sitio</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de cookies</a>
+                <a href="#">Mirá las recetas en nuestra pagina</a>
+            </div>
+            <div class="contacto-central">
+                <p>📞 +54 9 11 25153366</p>
+                <p>Si queres que te respondamos mas rapido, escribinos por <strong>whatsapp</strong></p>
+            </div>
+            <div class="redes-finales">
+                <p>¡Seguinos en nuestras redes!</p>
+                <div class="iconos-sociales">
+                    <span>f</span> <span>▶</span> <span>📸</span> <span>TikTok</span>
+                </div>
+    
  
