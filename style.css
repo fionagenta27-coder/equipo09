@@ -540,7 +540,7 @@ figure img {
 /* SECCIÓN VERDE (RESUMEN) */
 .resumen-talleres {
     background-color: #9fb375; /* Verde oliva del fondo */
-    background-image: url('fotos/fondo-vegetales.jpg'); /* Si tenés la imagen de fondo */
+    background-image: url('fotos/fototransparentetut.jpg'); /* Si tenés la imagen de fondo */
     background-blend-mode: multiply;
     background-size: cover;
     padding: 80px 0;
@@ -554,7 +554,7 @@ figure img {
 }
 
 .tagline {
-    color: #f2994a;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
