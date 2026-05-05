@@ -624,3 +624,166 @@ figure img {
     font-size: 18px;
     margin-bottom: 8px;
 }
+/* --- ESTILOS ESPECÍFICOS CONTACTO --- */
+
+.hero-contacto-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hero-contacto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.titulo-contacto {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.bajada-contacto {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Bloques de información con iconos circulares */
+.info-bloque {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.icono-circular {
+    background-color: #f2994a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.texto-bloque strong {
+    display: block;
+    font-size: 16px;
+}
+
+/* Redes en sección contacto */
+.redes-contacto {
+    margin-top: 40px;
+}
+
+.iconos-redes-naranja {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.circulo-red {
+    background-color: #f2994a;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Formulario */
+.subrayado-naranja {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.subrayado-naranja::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background-color: #f2994a;
+    border-radius: 2px;
+}
+
+.campo input, .campo textarea {
+    border: 2px solid #b8c98e !important;
+    background-color: white;
+    border-radius: 12px !important;
+    padding: 12px !important;
+}
+
+/* Mapa */
+.mapa-seccion {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.encabezado-mapa {
+    margin-bottom: 20px;
+}
+
+.encabezado-mapa h2 {
+    color: #4a5d23;
+    font-size: 1.8rem;
+}
+
+.contenedor-mapa {
+    border: 15px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Footer Final Verde */
+.footer-final-verde {
+    background-color: #b8c98e;
+    padding: 40px 0;
+    font-size: 13px;
+    color: #2d5a27;
+}
+
+.grid-footer-final {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.links-legales {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.links-legales a {
+    text-decoration: none;
+    color: #2d5a27;
+}
+
+.contacto-central {
+    text-align: center;
+}
+
+.redes-finales {
+    text-align: right;
+}
+
+.iconos-sociales {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
