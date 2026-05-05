@@ -6,31 +6,42 @@
     <title>Green Skills - Tutoriales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header-principal">
         <div class="contenedor-centrado header-flex">
-            <div id="logo">
+            <div id="logo" style="display: flex; align-items: center; gap: 10px;">
                 <a href="index.html">
-                    <!-- El estilo inline ayuda a quitar el fondo blanco y achicarlo -->
-                    <img src="fotos/logogs.png" alt="Logo Green Skills" width="100" style="mix-blend-mode: multiply;">
+                    <img src="fotos/logogs.png" alt="Logo Green Skills" width="60" style="mix-blend-mode: multiply;">
                 </a>
+                <span id="logo-texto">GREEN SKILLS</span>
             </div>
             <nav id="principal">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Profesores</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="tutoriales.html">Tutoriales</a></li>
                 </ul>
+            </nav>
+            <div class="header-derecha">
+                <div class="search-bar">
+                    <span class="lupa">🔍</span>
+                    <input type="text">
+                </div>
+                <button class="btn-login">Iniciar sesión</button>
+                <button class="btn-reg">Registrarse</button>
+            </div>
     </header>
 
-    <main class="contenedor-centrado">
-        <section class="tutoriales-hero">
+    <main>
+        <!-- SECCIÓN HERO TUTORIALES -->
+        <section class="contenedor-centrado tutoriales-hero">
             <div class="hero-texto-tutoriales">
-                <h1>TUTORIALES DE COCINA VERDE</h1>
+                <h1 class="titulo-subrayado">TUTORIALES DE <br>COCINA VERDE</h1>
                 <p>Explorá técnicas de la cocina vegetariana de manera práctica.</p>
                 
                 <div class="lista-recursos-v">
@@ -46,23 +57,84 @@
                         <strong>Beneficios de los platos</strong>
                         <p>Averiguá cuánto tiene de proteína, hidratos, etc.</p>
                     </article>
-                </div>
+                    <article class="pildora-recurso">
+                        <strong>Aprende sobre ingredientes orgánicos</strong>
+                        <p>Averiguá por qué son tan importantes los ingredientes orgánicos.</p>
+                    </article>
+
             <div class="hero-videos">
                 <div class="video-card">
-                    <iframe src="https://www.youtube.com/embed/Tx3xoCThDbE" frameborder="0" allowfullscreen></iframe>
-                    <span>¿Cómo hacer un...?</span>
+                    <div class="video-placeholder">
+                        <iframe src="https://www.youtube.com/embed/Tx3xoCThDbE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">¿Cómo hacer un...?</div>
                 </div>
                 <div class="video-card">
-                    <iframe src="https://www.youtube.com/embed/Tx3xoCThDbE" frameborder="0" allowfullscreen></iframe>
-                    <span>Incorpora verduras a tu dieta</span>
+                    <div class="video-placeholder">
+                        <iframe src="https://www.youtube.com/embed/Tx3xoCThDbE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">Incorpora verduras a tu dieta con este rico plato</div>
                 </div>
+        </section>
+
+        <!-- SECCIÓN RESUMEN (VERDE) -->
+        <section class="resumen-talleres">
+            <div class="contenedor-centrado">
+                <div class="resumen-encabezado">
+                    <span class="tagline">Resumen de los talleres</span>
+                    <h2>Aprendé a dominar 5 recetas vegetarianas en 4 semanas</h2>
+                    <p>Descubrí el paso a paso para transformar ingredientes frescos de origen vegetal en comidas increíbles.</p>
+                </div>
+                <div class="grilla-recetas">
+                    <article class="tarjeta-receta">
+                        <img src="fotos/receta1.jpg" alt="Ingredientes">
+                        <h3>Ingredientes esenciales</h3>
+                        <p>Conocé cuáles son los materiales esenciales que necesitás en tu cocina.</p>
+                    </article>
+                    <article class="tarjeta-receta">
+                        <img src="fotos/receta2.jpg" alt="Técnicas">
+                        <h3>Mejorá tus técnicas de cocina</h3>
+                        <p>Desde cortes precisos hasta métodos de cocción increíbles.</p>
+                    </article>
+                    <article class="tarjeta-receta">
+                        <img src="fotos/receta3.jpg" alt="Platos">
+                        <h3>Cómo lograr platos equilibrados</h3>
+                        <p>Entendé las bases de la nutrición para combinar proteínas y vegetales.</p>
+        </section>
+
+        <!-- SECCIÓN REQUERIMIENTOS -->
+        <section class="contenedor-centrado requerimientos-seccion">
+            <div class="requerimientos-grid">
+                <div class="req-texto-izq">
+                    <span class="tagline">Requerimientos</span>
+                    <h2>Técnicas Clave Para <br>Tu Cocina Verde</h2>
+                    <p>Dominar la <strong>cocina vegetariana</strong> no tiene por qué ser complicado ni aburrido. En esta sección vas a encontrar el paso a paso...</p>
+                    <p>Vas a descubrir cómo lograr <strong>texturas perfectas</strong> y <strong>combinaciones nutritivas</strong> sin estresarte en el proceso.</p>
+                </div>
+                <div class="req-lista-der">
+                    <div class="req-item">
+                        <h3>Diseñado para cualquier persona que quiera comer mejor.</h3>
+                        <p>No importa si recién arrancás en la cocina o si ya tenés experiencia previa.</p>
+                    </div>
+                    <div class="req-item">
+                        <h3>Aprendé 100% online desde cualquier dispositivo.</h3>
+                        <p>Mirá los tutoriales desde tu compu, tablet o directamente en el celular.</p>
+                    </div>
+                    <div class="req-item">
+                        <h3>Incluimos una lista con los materiales básicos a usar.</h3>
+                        <p>Detallamos qué ingredientes y utensilios vas a necesitar.</p>
+                    </div>
         </section>
     </main>
 
-    <footer class="footer-total">
-        <div class="footer-datos">
-            <div class="contenedor-centrado">
-                <p>© 2026 Green Skills - Tecno UB</p>
-                <div class="redes">
-                    <a href="https://www.instagram.com/ecocina._/" target="_blank">@ecocina._</a>
-                </div>
+    <footer class="newsletter">
+        <div class="contenedor-centrado news-flex">
+            <div class="news-texto">
+                <h3>Suscribite a nuestro Newsletter</h3>
+                <p>Recibí recetas y novedades a tu mail. ¡Te ayudamos a organizarte!</p>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Dirección de mail">
+                <button class="btn-footer">Suscribirse</button>
+            </div>
+
