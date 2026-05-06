@@ -10,97 +10,127 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-principal">
-        <div class="contenedor-centrado header-flex">
-            <div id="logo" style="display: flex; align-items: center; gap: 10px;">
-                <a href="index.html" id="logo-texto">GREEN SKILLS</a>
+    <!-- HEADER CORREGIDO (Se cerraron los divs y el header) -->
+<header class="header-principal">
+    <div class="contenedor-centrado header-flex">
+        <div id="logo" style="display: flex; align-items: center; gap: 10px;">
+            <a href="index.html" id="logo-texto">GREEN SKILLS</a>
+        </div>
+        <nav id="principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-derecha">
+            <div class="search-bar">
+                <span class="lupa">🔍</span>
+                <input type="text">
             </div>
-            <nav id="principal">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="tutoriales.html">Tutoriales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="header-derecha">
-                <div class="search-bar">
-                    <span class="lupa">🔍</span>
-                    <input type="text">
-                </div>
-                <button class="btn-login">Iniciar sesión</button>
-                <button class="btn-reg">Registrarse</button>
+            <button class="btn-login">Iniciar sesión</button>
+            <button class="btn-reg">Registrarse</button>
+        </div>
+    </div> <!-- Cierre de header-flex -->
+</header>
+
+<main>
+    <!-- SECCIÓN CURSOS (Fondo Verde) -->
+    <section class="seccion-cursos-v2">
+        <div class="contenedor-centrado">
+            <h2 class="titulo-principal-cursos">Elegí un curso y <br> empezá a aprender</h2>
+            
+            <div class="grilla-cursos-v2">
+                <article class="card-v2">
+                    <img src="fotos/bagels.jpg" alt="Panadería Vegana">
+                    <div class="card-v2-contenido">
+                        <h3>Panadería Vegana Artesanal</h3>
+                        <p><span class="icon">📋</span> 4 lecciones</p>
+                        <p><span class="icon">🕒</span> 4 horas</p>
+                    </div>
+                </article>
+
+                <article class="card-v2">
+                    <img src="fotos/torta.jpg" alt="Pastelería Vegana">
+                    <div class="card-v2-contenido">
+                        <h3>Pastelería Vegana</h3>
+                        <p><span class="icon">📋</span> 6 a 8 lecciones</p>
+                        <p><span class="icon">🕒</span> 4 horas</p>
+                    </div>
+                </article>
+
+                <article class="card-v2">
+                    <img src="fotos/cocinameditaraneo.jpg" alt="Cocina Mediterránea">
+                    <div class="card-v2-contenido">
+                        <h3>Cocina Vegana Mediterránea</h3>
+                        <p><span class="icon">📋</span> 5 lecciones</p>
+                        <p><span class="icon">🕒</span> 3 horas</p>
+                    </div>
+                </article>
             </div>
-    </header>
+    </section>
 
-    <main>
-        <!-- SECCIÓN CURSOS -->
-        <section class="seccion-cursos-v2">
-            <div class="contenedor-centrado">
-                <h2 class="titulo-principal-cursos">Elegí un curso y <br> empezá a aprender</h2>
-                
-                <div class="grilla-cursos-v2">
-                    <!-- Panadería -->
-                    <article class="card-v2">
-                        <img src="fotos/bagels.jpg" alt="Panadería Vegana">
-                        <div class="card-v2-contenido">
-                            <h3>Panadería Vegana Artesanal</h3>
-                            <p>4 Aprendé a hacer bagels, croissants, y más para tu casa.</p>
-                            <p>4 lecciones</p>
-                            <p>4 horas</p>
-                        </div>
-                    </article>
-
-                    <!-- Pastelería -->
-                    <article class="card-v2">
-                        <img src="fotos/torta.jpg" alt="Pastelería Vegana">
-                        <div class="card-v2-contenido">
-                            <h3>Pastelería Vegana</h3>
-                             <p>Conoce lo más rico de la pasteleria vegana y abri tu papilas gustativas. </p>
-                            <p>6 a 8 lecciones</p>
-                            <p>4 horas</p>
-                        </div>
-                    </article>
-
-                    <!-- Mediterránea -->
-                    <article class="card-v2">
-                        <img src="fotos/cocinameditaraneo.jpg" alt="Cocina Mediterránea">
-                        <div class="card-v2-contenido">
-                            <h3>Cocina Vegana Mediterránea</h3>
-                            <p>Cociná lo mejor de la cocina mediterránea y aprendé nuevas técnicas.</p>
-                            <p>5 lecciones</p>
-                            <p>3 horas</p>
-                        </div>
-
-        <!-- SECCIÓN CHEFS -->
-        <section class="seccion-chefs-v2">
-            <div class="contenedor-centrado">
-                <div class="encabezado-v2">
-                    <h2>Explorá a <span class="naranja">nuestros chefs</span></h2>
-                    <p class="negrita">Explorá a nuestros chefs</p>
-                    <p>Nuestro equipo de profesionales que nos acompañan</p>
-                </div>
-
-                <div class="grilla-chefs-v2">
-                    <div class="chef-item">
-                        <img src="fotos/chef1.jpg" alt="Clara Maria">
-                        <h4>Clara Maria</h4>
-                        <p>Chef general</p>
-                    </div>
-                    <div class="chef-item">
-                        <img src="fotos/chef2.jpg" alt="Emilio Gonzalo">
-                        <h4>Emilio Gonzalo</h4>
-                        <p>ayudante</p>
-                    </div>
-                    <div class="chef-item">
-                        <img src="fotos/chef3.jpg" alt="Carlos Estevez">
-                        <h4>Carlos Estevez</h4>
-                        <p>Chef genera;</p>
-                    </div>
-                
-                <div class="controles-v2">
-                    <div class="linea-progreso"></div>
-                    <span class="flecha">→</span>
-                </div>
+    <!-- SECCIÓN CHEFS (Fondo Crema) -->
+    <section class="seccion-chefs-v2">
+        <div class="contenedor-centrado">
+            <div class="encabezado-v2">
+                <h2>Explorá a <span class="naranja">nuestros chefs</span></h2>
+                <p>Nuestro equipo de profesionales que nos acompañan</p>
             </div>
-    
+            <div class="grilla-chefs-v2">
+                <div class="chef-item">
+                    <img src="fotos/chefmaria.jpg" alt="Clara Maria">
+                    <h4>Clara Maria</h4>
+                    <p>Chef general, especialista en alta cocina basada en plantas. Su enfoque se centra en transformar ingredientes nobles en experiencias gourmet, fusionando técnicas clásicas con la frescura de lo natural.</p>
+                </div>
+                <div class="chef-item">
+                    <img src="fotos/chefemilio.jpg" alt="Emilio Gonzalo">
+                    <h4>Emilio Gonzalo</h4>
+                    <p>Ayudante, el maestro de la experimentación y las texturas. Su especialidad es el desarrollo de fermentos y panes artesanales, aportando ese toque rústico y auténtico que define nuestra propuesta.</p>
+                </div>
+               <div class="chef-item">
+    <img src="fotos/chefmaria.jpg" alt="Clara Maria">
+    <h4>Clara Maria</h4>
+    <p>Chef general</p>
+    <p>Especialista en <strong>alta cocina basada en plantas</strong>. Su enfoque se centra en transformar ingredientes nobles en experiencias gourmet, fusionando técnicas clásicas con la frescura de lo natural.</p>
+</div>
+<div class="chef-item">
+    <img src="fotos/chefemilio.jpg" alt="Emilio Gonzalo">
+    <h4>Emilio Gonzalo</h4>
+    <p>Ayudante</p>
+    <p>El maestro de la <strong>experimentación y las texturas</strong>. Su especialidad es el desarrollo de fermentos y panes artesanales, aportando ese toque rústico y auténtico que define nuestra propuesta.</p>
+</div>
+<div class="chef-item">
+    <img src="fotos/chefcarlos.jpg" alt="Carlos Estevez">
+    <h4>Carlos Estevez</h4>
+    <p>Chef general</p>
+    <p>Experto en <strong>cocina mediterránea y de autor</strong>. Se destaca por su habilidad para equilibrar sabores intensos y especiados, creando platos que cuentan historias a través de productos de estación.</p>
+</div>
+            </div>   
+            <div class="controles-v2">
+                <div class="linea-progreso">
+                    <div class="progreso-activo"></div>
+                </div>
+                <span class="flecha-circular">→</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN RECETAS DESTACADAS (Nueva, según imagen) -->
+    <section class="recetas-destacadas-v2">
+        <div class="contenedor-centrado">
+            <div class="flex-encabezado-recetas">
+                <div class="texto-recetas">
+                    <h2>Recetas <span class="naranja">destacadas</span></h2>
+                    <p>Nuestras recetas que se siguen eligiendo todos los días, aprobadas por nutricionistas y especialistas.</p>
+                </div>
+                <a href="#" class="btn-explorar">EXPLORAR</a>
+            </div>
+
+            <div class="grilla-platos">
+                <img src="fotos/platodestacadoone.jpg" alt="Plato destacado">
+                <img src="fotos/platodesdos.jpg" alt="Plato destacado">
+                <img src="fotos/platodestres.jpg" alt="Plato destacado">
+            </div>
+     
