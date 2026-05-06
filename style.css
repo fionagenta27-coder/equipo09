@@ -1782,3 +1782,90 @@ main { position: relative; overflow: hidden; }
     color: #2d5a27;
     font-weight: bold;
 }
+/* ==========================================
+   ESTILOS BASE (MOBILE FIRST)
+   Estos estilos se aplican a TODO, pero están 
+   pensados para celulares.
+   ========================================== */
+
+/* Ajuste universal para imágenes y videos */
+img, figure, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Layout de secciones (Apilado para celu) */
+.seccion-contacto-layout, 
+.header-flex, 
+.header-derecha,
+.info-bloque {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Grillas de 1 sola columna para móvil */
+.grilla-cursos-v2, 
+.grilla-juegos, 
+.grilla-chefs-v2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Títulos adaptables */
+.titulo-subrayado {
+    font-size: 2.2rem; /* Tamaño cómodo para pulgares y pantallas chicas */
+    line-height: 1.1;
+}
+
+
+/* ==========================================
+   MEDIA QUERIES (DESKTOP / PC)
+   Solo se activa cuando la pantalla mide 
+   más de 1024px.
+   ========================================== */
+@media (min-width: 1024px) {
+    
+    .header-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-derecha {
+        flex-direction: row;
+    }
+
+    /* Re-alineación de columnas en Contacto */
+    .seccion-contacto-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        align-items: start;
+    }
+
+    .info-bloque {
+        flex-direction: row;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    /* Volver a las grillas originales de tu diseño */
+    .grilla-cursos-v2, 
+    .grilla-chefs-v2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grilla-juegos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .titulo-subrayado {
+        font-size: 3.5rem;
+    }
+}
