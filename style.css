@@ -1172,3 +1172,162 @@ main { position: relative; overflow: hidden; }
     background-color: #a4b67d;
     border-radius: 10px;
 }
+/* --- SECCIÓN GUÍAS DE COCINA (DISEÑO JPG) --- */
+
+.seccion-guias {
+    padding: 80px 20px;
+    background-color: #fcfbe3; /* Fondo crema base */
+}
+
+.receta-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/* Efecto Zig-Zag */
+.receta-card.inversa {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/* Títulos Principales */
+.receta-titulo {
+    font-size: 2.8rem;
+    color: #1e3d1a;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.receta-titulo span {
+    color: #b8c98e; /* Verde claro del texto */
+}
+
+/* Subtítulos Naranjas/Marrón */
+.subtitulo-icono {
+    color: #c07d48; 
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.receta-card.inversa .subtitulo-icono {
+    justify-content: flex-end;
+}
+
+.emoji {
+    font-size: 1.5rem;
+    filter: sepia(1) saturate(2) hue-rotate(330deg); /* Ajuste de color para los emojis */
+}
+
+.receta-info {
+    margin-bottom: 25px;
+}
+
+.receta-info p {
+    font-size: 16px;
+    color: #2d5a27;
+    max-width: 550px;
+}
+
+/* Listas de pasos */
+.lista-pasos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-pasos li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Bullets personalizados */
+.receta-card:not(.inversa) .lista-pasos li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.receta-card.inversa .lista-pasos li {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.receta-card.inversa .lista-pasos li::after {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- PARTE VISUAL (EL PLATO Y LA MANCHA VERDE) --- */
+
+.receta-visual {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La forma verde redondeada de fondo */
+.forma-fondo {
+    position: absolute;
+    width: 120%;
+    height: 90%;
+    background-color: #e2efd9; /* Verde muy suave */
+    z-index: 1;
+    border-radius: 60px 200px 100px 150px; /* Forma orgánica */
+}
+
+.receta-card.inversa .forma-fondo {
+    border-radius: 200px 60px 150px 100px;
+    left: -10%;
+}
+
+.marco-circular {
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    height: 350px;
+}
+
+.marco-circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 12px solid white; /* El borde blanco grueso */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Separador horizontal fino */
+.separador-receta {
+    border: 0;
+    height: 1.5px;
+    background-color: #c07d48;
+    width: 400px;
+    margin: 60px auto;
+    opacity: 0.4;
+}
+
+/* Responsive básico */
+@media (max-width: 900px) {
+    .receta-card, .receta-card.inversa {
+        flex-direction: column;
+        text-align: center;
+    }
+    .receta-card.inversa .subtitulo-icono { justify-content: center; }
+    .marco-circular { width: 280px; height: 280px; }
+}
