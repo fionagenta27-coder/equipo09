@@ -1331,3 +1331,152 @@ main { position: relative; overflow: hidden; }
     .receta-card.inversa .subtitulo-icono { justify-content: center; }
     .marco-circular { width: 280px; height: 280px; }
 }
+/* =========================================
+   ESTILOS ESPECÍFICOS CURSOS (BASADO EN JPG)
+   ========================================= */
+
+/* SECCIÓN CURSOS */
+.seccion-cursos-v2 {
+    background-color: #d8e6c4; /* El verde suave de fondo del JPG */
+    padding: 80px 0;
+}
+
+.titulo-principal-cursos {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1e3d1a;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.grilla-cursos-v2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-v2 {
+    background-color: #b3c691; /* El verde oliva de las cards */
+    border-radius: 25px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-v2:hover { transform: translateY(-5px); }
+
+.card-v2 img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-v2-contenido h3 {
+    color: #fcfbe3;
+    font-size: 1.3rem;
+    margin: 15px 0 10px;
+}
+
+.card-v2-contenido p {
+    color: #fcfbe3;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* SECCIÓN CHEFS */
+.seccion-chefs-v2 {
+    background-color: #fcfbe3; /* Crema */
+    padding: 80px 0;
+}
+
+.encabezado-v2 h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #1e3d1a;
+}
+
+.encabezado-v2 .naranja {
+    color: #d98e52; /* El naranja del diseño */
+}
+
+.puesto-chef {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.desc-chef {
+    font-size: 0.9rem;
+    padding: 0 10px;
+    line-height: 1.5;
+}
+
+.chef-item img {
+    width: 100%;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* SECCIÓN RECETAS DESTACADAS */
+.recetas-destacadas-v2 {
+    background-color: #d8e6c4;
+    padding: 80px 0;
+    /* Podés añadir un background-image sutil de vegetales aquí */
+}
+
+.flex-encabezado-recetas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.btn-explorar-v2 {
+    border: 2px solid #d98e52;
+    padding: 12px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #1e3d1a;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.grilla-platos-v2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.plato-wrap img {
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.4); /* El efecto de borde del JPG */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Slider Controls */
+.controles-v2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.linea-progreso {
+    width: 100px;
+    height: 5px;
+    background: #c5e0b4;
+    border-radius: 10px;
+}
+
+.progreso-activo {
+    width: 40%;
+    height: 100%;
+    background: #5d7031;
+    border-radius: 10px;
+}
