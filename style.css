@@ -726,10 +726,10 @@ figure img {
 }
 
 .campo input, .campo textarea {
-    border: 2px solid #b8c98e !important;
+    border: 2px solid #b8c98e;
     background-color: white;
-    border-radius: 12px !important;
-    padding: 12px !important;
+    border-radius: 12px;
+    padding: 12px;
 }
 
 /* Mapa */
