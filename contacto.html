@@ -12,7 +12,7 @@
 <body>
     <header class="header-principal">
         <div class="contenedor-centrado header-flex">
-            <div id="logo" style="display: flex; align-items: center; gap: 10px;">
+            <div id="logo">
                 <a href="index.html" id="logo-texto">GREEN SKILLS</a>
             </div>
             <nav id="principal">
@@ -34,102 +34,124 @@
         </div>
     </header>
 
-    <section class="hero-contacto-img">
-        <img src="fotos/fotocontacto.jpg" alt="Ensaladas saludables">
-    </section>
+    <main>
+        <!-- HERO DE CONTACTO -->
+        <section class="hero-contacto-img">
+            <img src="fotos/contacto-hero.jpg" alt="Cocina vegetal">
+        </section>
 
-    <main class="seccion-formulario-fondo">
-        <div class="contenedor-centrado contacto-flex">
-            <!-- Columna Izquierda: Info -->
-            <div class="contacto-info">
-                <h1 class="titulo-contacto subrayado-fino">Contactanos</h1>
-                <p class="bajada-contacto">Introducí tus datos y dejanos todas tus consultas.<br>¡En breve te respondemos!</p>
+        <section class="contenedor-centrado seccion-contacto-layout">
+            <!-- COLUMNA IZQUIERDA: INFORMACIÓN -->
+            <div class="contacto-info-lado">
+                <h1 class="titulo-subrayado">CONTACTO</h1>
+                <p class="bajada-contacto">¿Tenés dudas sobre nuestros cursos o talleres? Estamos para ayudarte a mejorar tus habilidades verdes.</p>
                 
                 <div class="info-bloque">
                     <div class="icono-circular">📍</div>
                     <div class="texto-bloque">
-                        <strong>Sede Principal</strong>
-                        <p>Av Jorge Newbery 1624, CABA</p>
+                        <strong>Dirección</strong>
+                        <span>Av. Cabildo 2000, Belgrano, CABA</span>
                     </div>
                 </div>
-                <div class="info-bloque">
-                    <div class="icono-circular">✉️</div>
-                    <div class="texto-bloque">
-                        <strong>Nuestro email</strong>
-                        <p>greenskills@gmail.com<br>greenskillsconsultas@yahoo.com</p>
-                    </div>
-                </div>
+
                 <div class="info-bloque">
                     <div class="icono-circular">📞</div>
                     <div class="texto-bloque">
-                        <strong>Nuestro numero</strong>
-                        <p>+54 9 11 25153366</p>
+                        <strong>Teléfono</strong>
+                        <span>+54 11 1234-5678</span>
                     </div>
                 </div>
-            <!-- Columna Derecha: Formulario -->
-            <div class="contacto-form-container">
-                <h2 class="titulo-form subrayado-naranja-grueso">Mandanos un mensaje</h2>
-                <form class="formulario-grid">
+
+                <div class="info-bloque">
+                    <div class="icono-circular">✉️</div>
+                    <div class="texto-bloque">
+                        <strong>Email</strong>
+                        <span>hola@greenskills.com</span>
+                    </div>
+                </div>
+
+                <div class="redes-contacto">
+                    <p>Seguinos en nuestras redes:</p>
+                    <div class="iconos-redes-naranja">
+                        <span class="circulo-red">f</span>
+                        <span class="circulo-red">ig</span>
+                        <span class="circulo-red">yt</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: FORMULARIO -->
+            <div class="contacto-form-lado">
+                <h2 class="subrayado-naranja">ESCRIBINOS</h2>
+                <form action="#" class="formulario-estilizado">
                     <div class="campo">
-                        <label>Nombre</label>
-                        <input type="text">
+                        <input type="text" placeholder="Nombre completo" required>
                     </div>
                     <div class="campo">
-                        <label>Teléfono</label>
-                        <input type="tel">
+                        <input type="email" placeholder="Correo electrónico" required>
                     </div>
                     <div class="campo">
-                        <label>Apellido</label>
-                        <input type="text">
+                        <textarea placeholder="Tu mensaje o consulta..." rows="5"></textarea>
                     </div>
-                    <div class="campo">
-                        <label>Mail</label>
-                        <input type="email">
+                    <button type="submit" class="pildora-oscura">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECCIÓN MAPA -->
+        <section class="mapa-seccion">
+            <div class="contenedor-centrado">
+                <div class="encabezado-mapa">
+                    <span class="tagline">Nuestra ubicación</span>
+                    <h2>VENÍ A CONOCER NUESTRA COCINA</h2>
+                </div>
+                <div class="contenedor-mapa">
+                    <!-- Placeholder de mapa (puedes reemplazar por iframe de Google Maps) -->
+                    <div style="width: 100%; height: 400px; background-color: #e2efd9; display: flex; align-items: center; justify-content: center;">
+                        <p>Mapa Interactivo de Belgrano</p>
                     </div>
-                    <div class="campo full-width">
-                        <label>Mensaje o consulta</label>
-                        <textarea rows="7"></textarea>
-                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section class="mapa-seccion">
-        <div class="encabezado-mapa">
-            <h2>¿Dónde nos encontramos?</h2>
-            <p><span>📍</span> Av Jorge Newbery 1624, CABA</p>
-        </div>
-        <div class="contenedor-centrado">
-            <div class="borde-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.234!2d-58.441!3d-34.571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb594c92a694d%3A0x6436691c9533f86e!2sAv.%20Jorge%20Newbery%201624%2C%20C1426%20CABA!5e0!3m2!1ses!2sar!4v1620000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- FOOTER FINAL -->
+ <footer class="footer-total">
+    <div class="newsletter">
+        <div class="contenedor-centrado news-flex">
+            <div class="texto-news">
+                <h3>Suscribite a nuestro Newsletter</h3>
+                <p>Recibí recetas y novedades a tu mail. ¡Te ayudamos a organizarte!</p>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Dirección de mail" aria-label="Correo electrónico">
+                <button class="btn-footer">Suscribirse</button>
+            </div>
+        </div> </div> <div class="footer-datos">
+        <div class="contenedor-centrado footer-grid">
+            <div class="footer-links">
+                <a href="#">Aviso legal y términos de uso</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Mirá las recetas en nuestra página</a>
+            </div>
+            <div class="footer-contacto">
+                <p>📞 +54 9 11 25153366</p>
+                <p>Escribinos por <strong>WhatsApp</strong></p>
+            </div>
+            <div class="footer-redes">
+                <p>¡Seguinos en nuestras redes!</p>
+                <div class="iconos-redes">
+                    <a href="https://www.facebook.com/EasyVeggieIdeas/">FB</a> 
+                    <a href="https://www.youtube.com/@vidavegana">YT</a> 
+                    <a href="https://www.instagram.com/vegan/">IG</a> 
+                    <a href="https://www.tiktok.com/@feedyoursoul____?_r=1&_t=ZT-967Yb3nEdzh">TK</a>
+                </div> 
             </div>
         </div>
-    </section>
-<!-- FOOTER -->
-    <footer class="footer-total">
-        <div class="newsletter">
-            <div class="contenedor-centrado news-flex">
-                <div class="texto-news">
-                    <h3>Suscribite a nuestro Newsletter</h3>
-                    <p>Recibí recetas y novedades a tu mail. ¡Te ayudamos a organizarte!</p>
-                </div>
-                <div class="input-group">
-                    <input type="email" placeholder="Dirección de mail" aria-label="Correo electrónico">
-                    <button class="btn-footer">Suscribirse</button>
-                </div>
-        </div>
-        <div class="footer-datos">
-            <div class="contenedor-centrado footer-grid">
-                <div class="footer-links">
-                    <a href="#">Aviso legal y términos de uso</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Mirá las recetas en nuestra página</a>
-                </div>
-                <div class="footer-contacto">
-                    <p>📞 +54 9 11 25153366</p>
-                    <p>Escribinos por <strong>WhatsApp</strong></p>
-                </div>
-                <div class="footer-redes">
-                    <p>¡Seguinos en nuestras redes!</p>
-                    <div class="iconos-redes">
-                        <a href="https://www.facebook.com/EasyVeggieIdeas/">FB</a> <a href="https://www.youtube.com/@vidavegana">YT</a> <a href="https://www.instagram.com/vegan/">IG</a> <a href="https://www.tiktok.com/@feedyoursoul____?_r=1&_t=ZT-967Yb3nEdzh">TK</a>
-                    </div>
+    </div>
+</footer>
+</body>
+</html>
+  
+       
    
