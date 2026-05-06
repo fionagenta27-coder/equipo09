@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HEADER CORREGIDO (Se cerraron los divs y el header) -->
 <header class="header-principal">
     <div class="contenedor-centrado header-flex">
         <div id="logo" style="display: flex; align-items: center; gap: 10px;">
@@ -32,11 +31,9 @@
             <button class="btn-login">Iniciar sesión</button>
             <button class="btn-reg">Registrarse</button>
         </div>
-    </div> <!-- Cierre de header-flex -->
 </header>
-
 <main>
-    <!-- SECCIÓN CURSOS (Fondo Verde) -->
+    <!-- SECCIÓN CURSOS -->
     <section class="seccion-cursos-v2">
         <div class="contenedor-centrado">
             <h2 class="titulo-principal-cursos">Elegí un curso y <br> empezá a aprender</h2>
@@ -68,35 +65,34 @@
                         <p><span class="icon">🕒</span> 3 horas</p>
                     </div>
                 </article>
-            </div>
     </section>
 
-    <!-- SECCIÓN CHEFS (Fondo Crema) -->
+    <!-- SECCIÓN CHEFS -->
     <section class="seccion-chefs-v2">
         <div class="contenedor-centrado">
             <div class="encabezado-v2">
                 <h2>Explorá a <span class="naranja">nuestros chefs</span></h2>
-                <p>Nuestro equipo de profesionales que nos acompañan</p>
+                <p class="negrita">Nuestro equipo de profesionales que nos acompañan</p>
             </div>
             <div class="grilla-chefs-v2">
                 <div class="chef-item">
-    <img src="fotos/chefmaria.jpg" alt="Clara Maria">
-    <h4>Clara Maria</h4>
-    <p>Chef general</p>
-    <p>Especialista en <strong>alta cocina basada en plantas</strong>. Su enfoque se centra en transformar ingredientes nobles en experiencias gourmet, fusionando técnicas clásicas con la frescura de lo natural.</p>
-</div>
-<div class="chef-item">
-    <img src="fotos/chefemilio.jpg" alt="Emilio Gonzalo">
-    <h4>Emilio Gonzalo</h4>
-    <p>Ayudante</p>
-    <p>El maestro de la <strong>experimentación y las texturas</strong>. Su especialidad es el desarrollo de fermentos y panes artesanales, aportando ese toque rústico y auténtico que define nuestra propuesta.</p>
-</div>
-<div class="chef-item">
-    <img src="fotos/chefcarlos.jpg" alt="Carlos Estevez">
-    <h4>Carlos Estevez</h4>
-    <p>Chef general</p>
-    <p>Experto en <strong>cocina mediterránea y de autor</strong>. Se destaca por su habilidad para equilibrar sabores intensos y especiados, creando platos que cuentan historias a través de productos de estación.</p>
-</div>
+                    <img src="fotos/chefmaria.jpg" alt="Clara Maria">
+                    <h4>Clara Maria</h4>
+                    <p class="puesto-chef">Chef general</p>
+                    <p class="desc-chef">Especialista en <strong>alta cocina basada en plantas</strong>. Su enfoque se centra en transformar ingredientes nobles en experiencias gourmet.</p>
+                </div>
+                <div class="chef-item">
+                    <img src="fotos/chefemilio.jpg" alt="Emilio Gonzalo">
+                    <h4>Emilio Gonzalo</h4>
+                    <p class="puesto-chef">Ayudante</p>
+                    <p class="desc-chef">El maestro de la <strong>experimentación y las texturas</strong>. Su especialidad es el desarrollo de fermentos y panes artesanales.</p>
+                </div>
+                <div class="chef-item">
+                    <img src="fotos/chefcarlos.jpg" alt="Carlos Estevez">
+                    <h4>Carlos Estevez</h4>
+                    <p class="puesto-chef">Chef general</p>
+                    <p class="desc-chef">Experto en <strong>cocina mediterránea y de autor</strong>. Se destaca por su habilidad para equilibrar sabores intensos y especiados.</p>
+                </div>
             </div>   
             <div class="controles-v2">
                 <div class="linea-progreso">
@@ -106,8 +102,7 @@
             </div>
         </div>
     </section>
-
-    <!-- SECCIÓN RECETAS DESTACADAS (Nueva, según imagen) -->
+    <!-- SECCIÓN RECETAS DESTACADAS -->
     <section class="recetas-destacadas-v2">
         <div class="contenedor-centrado">
             <div class="flex-encabezado-recetas">
@@ -115,14 +110,17 @@
                     <h2>Recetas <span class="naranja">destacadas</span></h2>
                     <p>Nuestras recetas que se siguen eligiendo todos los días, aprobadas por nutricionistas y especialistas.</p>
                 </div>
-                <a href="#" class="btn-explorar">EXPLORAR</a>
+                <a href="#" class="btn-explorar-v2">EXPLORAR</a>
             </div>
 
-            <div class="grilla-platos">
-                <img src="fotos/platodestacadoone.jpg" alt="Plato destacado">
-                <img src="fotos/platodesdos.jpg" alt="Plato destacado">
-                <img src="fotos/platodestres.jpg" alt="Plato destacado">
+            <div class="grilla-platos-v2">
+                <div class="plato-wrap"><img src="fotos/platodestacadoone.jpg" alt="Plato"></div>
+                <div class="plato-wrap"><img src="fotos/platodesdos.jpg" alt="Plato"></div>
+                <div class="plato-wrap"><img src="fotos/platodestres.jpg" alt="Plato"></div>
             </div>
+        </div>
+    </section>
+</main>
 <!-- FOOTER -->
     <footer class="footer-total">
         <div class="newsletter">
