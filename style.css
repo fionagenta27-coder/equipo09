@@ -1449,13 +1449,22 @@ main { position: relative; overflow: hidden; }
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+    align-items: center; /* Asegura que todos se alineen al centro verticalmente */
+}
+
+.plato-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1.4; /* Esto crea la forma ovalada vertical del diseño */
+    overflow: hidden;
+    border-radius: 500px; /* Hace que el contenedor sea totalmente ovalado */
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 .plato-wrap img {
     width: 100%;
-    border-radius: 50%;
-    border: 10px solid rgba(255, 255, 255, 0.4); /* El efecto de borde del JPG */
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    height: 100%;
+    object-fit: cover; /* Esto evita que la imagen se deforme al estirarse */
 }
 
 /* Slider Controls */
