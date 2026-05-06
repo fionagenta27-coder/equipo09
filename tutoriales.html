@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Skills - Tutoriales</title>
+    <!-- Fuentes y Estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 1. HEADER Y NAVEGACIÓN -->
     <header class="header-principal">
         <div class="contenedor-centrado header-flex">
             <div id="logo" style="display: flex; align-items: center; gap: 10px;">
-                <a href="index.html">
-                </a>
-                <span id="logo-texto">GREEN SKILLS</span>
+                <a href="index.html" id="logo-texto">GREEN SKILLS</a>
             </div>
             <nav id="principal">
                 <ul>
@@ -28,54 +28,53 @@
             <div class="header-derecha">
                 <div class="search-bar">
                     <span class="lupa">🔍</span>
-                    <input type="text">
+                    <input type="text" placeholder="Buscar...">
                 </div>
                 <button class="btn-login">Iniciar sesión</button>
                 <button class="btn-reg">Registrarse</button>
             </div>
     </header>
-   <main>
-    <!-- SECCIÓN HERO TUTORIALES -->
-    <section class="contenedor-centrado tutoriales-hero">
-        <div class="hero-texto-tutoriales">
-            <h1 class="titulo-subrayado">TUTORIALES DE <br>COCINA VERDE</h1>
-            <p class="bajada-hero">Explora tecnicas de la cocina vegetariana de manera practica.</p>
-            
-            <div class="lista-recursos-v">
-                <article class="pildora-recurso">
-                    <strong>Recursos y materiales</strong>
-                    <p>Aprende los cortes basicos para aprovecharal maximo tus vegetales.</p>
-                </article>
-                <article class="pildora-recurso">
-                    <strong>Recetario saludable</strong>
-                    <p>Descarga nuestras guias paso a paso para cocinar en casa.</p>
-                </article>
-                <article class="pildora-recurso">
-                    <strong>Beneficios de los platos</strong>
-                    <p>Averigua cuanto tiene de proteina, hidratos, etc nuestras recetas.</p>
-                </article>
-                <article class="pildora-recurso">
-                    <strong>Aprende sobre ingredientes organicos</strong>
-                    <p>Averigua porque son tan importantes los igredientes organicos.</p>
-                </article>
-        </div>
-        <div class="hero-videos">
-            <div class="video-card">
-                <div class="video-placeholder">
-                    <!-- Link de ejemplo de Youtube -->
-                    <iframe src="https://www.youtube.com/embed/Tx3xoCThDbE" frameborder="0" allowfullscreen></iframe>
+    <main>
+        <!-- 2. SECCIÓN HERO TUTORIALES -->
+        <section class="contenedor-centrado tutoriales-hero">
+            <div class="hero-texto-tutoriales">
+                <h1 class="titulo-subrayado">TUTORIALES DE <br>COCINA VERDE</h1>
+                <p class="bajada-hero">Explora técnicas de la cocina vegetariana de manera práctica.</p>
+                
+                <div class="lista-recursos-v">
+                    <article class="pildora-recurso">
+                        <strong>Recursos y materiales</strong>
+                        <p>Aprende los cortes básicos para aprovechar al máximo tus vegetales.</p>
+                    </article>
+                    <article class="pildora-recurso">
+                        <strong>Recetario saludable</strong>
+                        <p>Descarga nuestras guías paso a paso para cocinar en casa.</p>
+                    </article>
+                    <article class="pildora-recurso">
+                        <strong>Beneficios de los platos</strong>
+                        <p>Averigua cuánto tiene de proteína e hidratos nuestras recetas.</p>
+                    </article>
+                    <article class="pildora-recurso">
+                        <strong>Ingredientes orgánicos</strong>
+                        <p>Averigua por qué son tan importantes para tu salud.</p>
+                    </article>
                 </div>
-                <div class="video-caption">¿Como hacer un ...?</div>
-            </div>
-            <div class="video-card">
-                <div class="video-placeholder"> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dYV2wW9XZAc?si=CNqIj95WvRlQQYOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <div class="hero-videos">
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <iframe src="https://www.youtube.com/embed/Tx3xoCThDbE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">¿Cómo hacer un corte juliana?</div>
                 </div>
-                <div class="video-caption">Incorpora verduras a tu dieta con este rico plato</div>
-            </div>
-    </section>
-</main>
-        <!-- SECCIÓN RESUMEN (VERDE) -->
+                <div class="video-card">
+                    <div class="video-placeholder"> 
+                        <iframe src="https://www.youtube.com/embed/dYV2wW9XZAc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">Incorpora verduras a tu dieta diaria</div>
+                </div>
+        </section>
+        <!-- 3. SECCIÓN RESUMEN (FONDO VERDE) -->
         <section class="resumen-talleres">
             <div class="contenedor-centrado">
                 <div class="resumen-encabezado">
@@ -83,6 +82,7 @@
                     <h2>Aprendé a dominar 5 recetas vegetarianas en 4 semanas</h2>
                     <p>Descubrí el paso a paso para transformar ingredientes frescos de origen vegetal en comidas increíbles.</p>
                 </div>
+                
                 <div class="grilla-recetas">
                     <article class="tarjeta-receta">
                         <img src="fotos/ingredientes.jpeg" alt="Ingredientes">
@@ -91,38 +91,41 @@
                     </article>
                     <article class="tarjeta-receta">
                         <img src="fotos/tecnicascocina.jpg" alt="Técnicas">
-                        <h3>Mejorá tus técnicas de cocina</h3>
+                        <h3>Mejorá tus técnicas</h3>
                         <p>Desde cortes precisos hasta métodos de cocción increíbles.</p>
                     </article>
                     <article class="tarjeta-receta">
                         <img src="fotos/platosaludable.jpg" alt="Platos">
-                        <h3>Cómo lograr platos equilibrados</h3>
+                        <h3>Platos equilibrados</h3>
                         <p>Entendé las bases de la nutrición para combinar proteínas y vegetales.</p>
+                    </article>
+                </div>
         </section>
-
-        <!-- SECCIÓN REQUERIMIENTOS -->
+        <!-- 4. SECCIÓN REQUERIMIENTOS -->
         <section class="contenedor-centrado requerimientos-seccion">
             <div class="requerimientos-grid">
                 <div class="req-texto-izq">
                     <span class="tagline">Requerimientos</span>
                     <h2>Técnicas Clave Para <br>Tu Cocina Verde</h2>
-                    <p> Dominar la cocina vegetariana no tiene por qué ser complicado ni aburrido. En esta sección vas a encontrar el paso a paso para transformar ingredientes simples en platos increíbles. Nuestros tutoriales están pensados para que aprendas a tu propio ritmo, desde cortes básicos de vegetales hasta métodos de cocción que potencian cada sabor natural.  Vas a descubrir cómo lograr texturas perfectas y combinaciones nutritivas sin estresarte en el proceso. Olvidate de las recetas que no salen como en la foto; acá te mostramos los secretos prácticos para que cada comida saludable sea un éxito garantizado en tu casa.</p>
+                    <p>Dominar la cocina vegetariana no tiene por qué ser complicado. En esta sección vas a encontrar el paso a paso para transformar ingredientes simples en platos increíbles.</p>
                 </div>
                 <div class="req-lista-der">
                     <div class="req-item">
-                        <h3>Diseñado para cualquier persona que quiera comer mejor.</h3>
-                        <p>No importa si recién arrancás en la cocina o si ya tenés experiencia previa.</p>
+                        <h3>Para cualquier nivel</h3>
+                        <p>No importa si recién arrancás o si ya tenés experiencia previa.</p>
                     </div>
                     <div class="req-item">
-                        <h3>Aprendé 100% online desde cualquier dispositivo.</h3>
-                        <p>Mirá los tutoriales desde tu compu, tablet o directamente en el celular.</p>
+                        <h3>Acceso 100% online</h3>
+                        <p>Mirá los tutoriales desde tu compu, tablet o celular en cualquier momento.</p>
                     </div>
                     <div class="req-item">
-                        <h3>Incluimos una lista con los materiales básicos a usar.</h3>
-                        <p>Detallamos qué ingredientes y utensilios vas a necesitar.</p>
+                        <h3>Material descargable</h3>
+                        <p>Incluimos listas de materiales y utensilios básicos para empezar.</p>
                     </div>
         </section>
     </main>
+
+    <!-- 5. FOOTER -->
     <footer class="newsletter">
         <div class="contenedor-centrado news-flex">
             <div class="news-texto">
@@ -133,4 +136,5 @@
                 <input type="email" placeholder="Dirección de mail">
                 <button class="btn-footer">Suscribirse</button>
             </div>
+
 
