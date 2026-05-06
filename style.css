@@ -1782,90 +1782,113 @@ main { position: relative; overflow: hidden; }
     color: #2d5a27;
     font-weight: bold;
 }
-/* ==========================================
-   ESTILOS BASE (MOBILE FIRST)
-   Estos estilos se aplican a TODO, pero están 
-   pensados para celulares.
-   ========================================== */
+/* ============================================================
+   ESTILOS BASE: OPTIMIZACIÓN PARA CELULAR (MOBILE FIRST)
+   ============================================================ */
 
-/* Ajuste universal para imágenes y videos */
-img, figure, video, iframe {
+/* Ajuste de contenedores y márgenes */
+.contenedor-centrado {
+    max-width: 100%;
+    padding: 0 20px; /* Margen de seguridad en los bordes del celu */
+}
+
+/* Imágenes y elementos visuales flexibles */
+img, figure, video, .plato-overlap {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Layout de secciones (Apilado para celu) */
-.seccion-contacto-layout, 
+/* Tipografía Adaptable */
+.titulo-subrayado {
+    font-size: 2.2rem; /* Más pequeño para evitar cortes en móvil */
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* Hero y Secciones Principales (Apilado Vertical) */
+.hero-flex, 
 .header-flex, 
-.header-derecha,
-.info-bloque {
+.header-derecha, 
+.seccion-contacto-layout, 
+.news-flex {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Todo uno abajo del otro */
+    gap: 25px;
     align-items: center;
     text-align: center;
 }
 
-/* Grillas de 1 sola columna para móvil */
+/* Cuadro de Beneficios (Eliminamos el padding excesivo de 110px) */
+.cuadro-beneficios {
+    width: 100%;
+    min-width: auto;
+    padding: 25px; /* Espaciado interno cómodo para el dedo */
+    margin: 0 auto;
+}
+
+/* Grillas de Cursos, Juegos y Recetas (1 Columna) */
 .grilla-cursos-v2, 
 .grilla-juegos, 
-.grilla-chefs-v2 {
+.grilla-chefs-v2, 
+.grilla-recetas {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Una tarjeta por fila */
     gap: 20px;
-    padding: 10px;
 }
 
-/* Títulos adaptables */
-.titulo-subrayado {
-    font-size: 2.2rem; /* Tamaño cómodo para pulgares y pantallas chicas */
-    line-height: 1.1;
-}
-
-
-/* ==========================================
-   MEDIA QUERIES (DESKTOP / PC)
-   Solo se activa cuando la pantalla mide 
-   más de 1024px.
-   ========================================== */
+/* ============================================================
+   MEDIA QUERY: AJUSTES PARA PC (Escritorio)
+   Se activa solo en pantallas de más de 1024px
+   ============================================================ */
 @media (min-width: 1024px) {
-    
-    .header-flex {
+
+    .contenedor-centrado {
+        max-width: 1200px; /* Volvemos al ancho de diseño original */
+        margin: 0 auto;
+    }
+
+    /* Restauramos el flujo horizontal */
+    .hero-flex, 
+    .header-flex, 
+    .seccion-contacto-layout, 
+    .news-flex {
         flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .header-flex {
         justify-content: space-between;
+        align-items: center;
     }
 
     .header-derecha {
         flex-direction: row;
+        width: auto;
     }
 
-    /* Re-alineación de columnas en Contacto */
-    .seccion-contacto-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    /* Tipografía para pantallas grandes */
+    .titulo-subrayado {
+        font-size: 3.5rem;
         text-align: left;
-        align-items: start;
     }
 
-    .info-bloque {
-        flex-direction: row;
-        text-align: left;
-        justify-content: flex-start;
+    /* Restauramos el diseño del cuadro de beneficios original */
+    .cuadro-beneficios {
+        padding: 30px 110px 30px 30px;
+        min-width: 280px;
     }
 
-    /* Volver a las grillas originales de tu diseño */
+    /* Grillas Multi-columna */
     .grilla-cursos-v2, 
-    .grilla-chefs-v2 {
-        grid-template-columns: repeat(3, 1fr);
+    .grilla-chefs-v2, 
+    .grilla-recetas {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en PC */
     }
 
     .grilla-juegos {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .titulo-subrayado {
-        font-size: 3.5rem;
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas para los iconos */
     }
 }
