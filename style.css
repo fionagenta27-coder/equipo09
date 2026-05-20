@@ -609,6 +609,7 @@ figure img {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 80px;
+    align-items: start; /* Mantiene alineados los techos de ambas columnas */
 }
 
 .req-item {
@@ -617,11 +618,17 @@ figure img {
     padding-left: 30px;
 }
 
+/* Evita que el último ítem agregue espacio extra al final del contenedor */
+.req-item:last-child {
+    margin-bottom: 0;
+}
+
+/* El círculo verde texturado */
 .req-item::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 3px; /* Ajustado para que calce perfecto con la primera línea de texto */
     width: 15px;
     height: 15px;
     background-color: #5d7031;
@@ -630,7 +637,21 @@ figure img {
 
 .req-item h3 {
     font-size: 18px;
+    margin-top: 0; /* ¡CRUCIAL! Resetea el margen del navegador para que no tire el título abajo */
     margin-bottom: 8px;
+    line-height: 1.2; /* Asegura una buena base para la alineación del ::before */
+}
+
+/* --- ADAPTACIÓN RESPONSIVE (Celulares y Tablets) --- */
+@media (max-width: 768px) {
+    .requerimientos-seccion {
+        padding: 50px 20px; /* Un poco menos de espacio en pantallas chicas */
+    }
+
+    .requerimientos-grid {
+        grid-template-columns: 1fr; /* Rompe las dos columnas y las apila */
+        gap: 40px; /* Reduce la separación exagerada */
+    }
 }
 /* --- ESTILOS ESPECÍFICOS CONTACTO --- */
 
