@@ -1913,3 +1913,64 @@ img, figure, video, .plato-overlap {
         grid-template-columns: repeat(4, 1fr); /* 4 columnas para los iconos */
     }
 }
+/* ============================================================
+   ADAPTACIÓN RESPONSIVE GLOBAL (CELULARES)
+   ============================================================ */
+@media (max-width: 768px) {
+    /* 1. Romper las grillas: Pasamos todo de 2 o 3 columnas a 1 sola */
+    .tutoriales-hero,
+    .requerimientos-grid,
+    .seccion-contacto-layout,
+    .talleres-layout,
+    .grilla-cursos-v2,
+    .grilla-chefs-v2,
+    .grilla-platos-v2,
+    .grilla-recetas,
+    .grid-footer-final {
+        grid-template-columns: 1fr;
+        gap: 40px; /* Reducimos los huecos gigantes de la versión de compu */
+    }
+
+    /* 2. Apilar elementos Flexbox: De fila (horizontal) a columna (vertical) */
+    .hero-flex,
+    .header-flex,
+    .header-derecha,
+    .news-flex,
+    .grilla-talleres,
+    .receta-card,
+    .receta-card.inversa {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: center;
+    }
+
+    /* 3. Ajuste de imágenes y superposiciones para que no rompan la pantalla */
+    .cuadro-beneficios {
+        padding: 25px; /* Saca el padding exagerado de 110px de la compu */
+        width: 100%;
+        min-width: auto;
+    }
+
+    .plato-overlap {
+        margin-left: 0; /* Anula el margen negativo para que el plato se centre */
+        width: 100%;
+        max-width: 300px; /* Evita que el plato ocupe el 100% de una pantalla chica */
+        height: auto;
+    }
+
+    /* 4. Ajustar tamaños de textos gigantes */
+    .titulo-subrayado,
+    .receta-titulo,
+    .titulo-principal-cursos,
+    .hero-texto h1 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
+    /* Ajuste específico para el marco circular de las guías */
+    .marco-circular {
+        width: 280px;
+        height: 280px;
+    }
+}
