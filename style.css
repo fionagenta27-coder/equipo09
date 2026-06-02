@@ -386,35 +386,6 @@ figure img {
    DISEÑO FINAL TUTORIALES (SEGÚN JPG)
    ============================================================ */
 
-.tutoriales-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    padding: 80px 20px;
-    align-items: start;
-}
-
-.titulo-subrayado {
-    font-size: 3.8rem;
-    font-weight: 900;
-    line-height: 0.9;
-    color: #2d5a27;
-    position: relative;
-    margin-bottom: 25px;
-    display: inline-block;
-}
-
-.titulo-subrayado::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -15px;
-    width: 100%;
-    height: 8px; /* El grosor naranja del JPG */
-    background-color: #f2994a;
-    border-radius: 10px;
-}
-
 .bajada-hero {
     font-size: 1.2rem;
     margin: 40px 0 30px 0;
@@ -470,35 +441,7 @@ figure img {
     color: #000;
 }
 /* --- AJUSTES ESPECÍFICOS DISEÑO JPG --- */
-
-.titulo-subrayado {
-    font-size: 3.5rem;
-    font-weight: 900;
-    line-height: 1.1;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.titulo-subrayado::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 80%;
-    height: 4px;
-    background-color: #f2994a; /* El naranja del diseño */
-    border-radius: 2px;
-}
-
 /* Tutoriales Hero Layout */
-.tutoriales-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    padding: 60px 20px;
-    align-items: start;
-}
 
 .pildora-recurso {
     background: #c5e0b4;
