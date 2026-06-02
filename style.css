@@ -1517,7 +1517,7 @@ main { position: relative; overflow: hidden; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    padding: 80px 20px;
+    padding: 150px 20px 80px 20px;
     align-items: start;
 }
 
