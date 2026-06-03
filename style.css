@@ -1128,8 +1128,8 @@ figure img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    padding: 190px 20px 80px 20px;
-    align-items: start;
+    padding: 190px 20px 120px 20px;
+    align-items: center;
 }
 
 .titulo-subrayado {
@@ -1175,6 +1175,13 @@ figure img {
     border-radius: 25px;
     overflow: hidden;
     background: #000;
+}
+/* 👇 AGREGA ESTE BLOQUE NUEVO 👇 */
+.video-placeholder iframe,
+.video-placeholder video {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 .video-caption {
     background: white;
