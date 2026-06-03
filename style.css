@@ -1176,7 +1176,7 @@ figure img {
     overflow: hidden;
     background: #000;
 }
-/* 👇 MODIFICA ESTE BLOQUE EXACTAMENTE ASÍ 👇 */
+/* 👇  BLOQUE MODIFICADO 👇 */
 .video-placeholder iframe,
 .video-placeholder video {
     width: 100% !important;   /* !important fuerza el ancho */
@@ -1461,5 +1461,28 @@ img, figure, video, .plato-overlap {
     .marco-circular {
         width: 280px;
         height: 280px;
+    }
+}
+@media (max-width: 768px) {
+    /* Ajustamos el hero para móvil */
+    .tutoriales-hero {
+        padding: 100px 20px 60px 20px; /* Reducimos el padding superior e inferior */
+        gap: 30px; /* Reducimos la separación entre columnas */
+    }
+
+    /* Ajustamos el título */
+    .titulo-subrayado {
+        font-size: 2.5rem; /* Ajuste intermedio para que no sea diminuto */
+        margin-bottom: 30px; /* Damos más espacio al margen inferior */
+    }
+
+    /* Ajustamos el subrayado naranja */
+    .titulo-subrayado::after {
+        bottom: -8px; /* Ajustamos la posición del subrayado */
+    }
+
+    /* Separamos el párrafo que está justo debajo del título */
+    .tutoriales-hero p {
+        margin-top: 15px; /* Empuja el texto hacia abajo */
     }
 }
