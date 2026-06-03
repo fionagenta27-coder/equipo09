@@ -1176,12 +1176,13 @@ figure img {
     overflow: hidden;
     background: #000;
 }
-/* 👇 AGREGA ESTE BLOQUE NUEVO 👇 */
+/* 👇 MODIFICA ESTE BLOQUE EXACTAMENTE ASÍ 👇 */
 .video-placeholder iframe,
 .video-placeholder video {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;   /* !important fuerza el ancho */
+    height: 100% !important;  /* !important fuerza el alto */
     border: none;
+    display: block;           /* Esto elimina cualquier espacio extra por debajo */
 }
 .video-caption {
     background: white;
