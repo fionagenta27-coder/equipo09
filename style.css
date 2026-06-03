@@ -1485,3 +1485,13 @@ img, figure, video, .plato-overlap {
     .tutoriales-hero p {
         margin-top: 15px; /* Empuja el texto hacia abajo */
     }
+/* Feedback visual para el usuario */
+.mensaje-exito { 
+    color: #2ecc71; 
+    font-weight: bold; 
+} 
+
+.mensaje-error { 
+    color: #e74c3c; 
+    font-weight: bold; 
+}

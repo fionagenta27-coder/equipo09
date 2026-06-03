@@ -105,39 +105,42 @@
 
     <!-- FOOTER FINAL -->
     <footer class="footer-total">
-        <div class="newsletter">
-            <div class="contenedor-centrado news-flex">
-                <div class="texto-news">
-                    <h3>Suscribite a nuestro Newsletter</h3>
-                    <p>Recibí recetas y novedades a tu mail. ¡Te ayudamos a organizarte!</p>
-                </div>
-                <div class="input-group">
-                    <input type="email" placeholder="Dirección de mail" aria-label="Correo electrónico">
-                    <button class="btn-footer">Suscribirse</button>
+    <div class="newsletter">
+        <div class="contenedor-centrado news-flex">
+            <div class="texto-news">
+                <h3>Suscribite a nuestro Newsletter</h3>
+                <p>Recibí recetas y novedades a tu mail. ¡Te ayudamos a organizarte!</p>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email-input" placeholder="Dirección de mail" aria-label="Correo electrónico">
+                <button id="btn-suscribir" class="btn-footer">Suscribirse</button>
+            </div>
+            <p id="msg-feedback" style="display: none; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <div class="footer-datos">
+        <div class="contenedor-centrado footer-grid">
+            <div class="footer-links">
+                <a href="#">Aviso legal y términos de uso</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Mirá las recetas en nuestra página</a>
+            </div>
+            <div class="footer-contacto">
+                <p>📞 +54 9 11 25153366</p>
+                <p>Escribinos por <strong>WhatsApp</strong></p>
+            </div>
+            <div class="footer-redes">
+                <p>¡Seguinos en nuestras redes!</p>
+                <div class="iconos-redes">
+                    <a href="https://www.facebook.com/EasyVeggieIdeas/">FB</a> 
+                    <a href="https://www.youtube.com/@vidavegana">YT</a> 
+                    <a href="https://www.instagram.com/vegan/">IG</a> 
+                    <a href="https://www.tiktok.com/@feedyoursoul____?_r=1&_t=ZT-967Yb3nEdzh">TK</a>
                 </div>
             </div>
         </div>
-        <div class="footer-datos">
-            <div class="contenedor-centrado footer-grid">
-                <div class="footer-links">
-                    <a href="#">Aviso legal y términos de uso</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Mirá las recetas en nuestra página</a>
-                </div>
-                <div class="footer-contacto">
-                    <p>📞 +54 9 11 25153366</p>
-                    <p>Escribinos por <strong>WhatsApp</strong></p>
-                </div>
-                <div class="footer-redes">
-                    <p>¡Seguinos en nuestras redes!</p>
-                    <div class="iconos-redes">
-                        <a href="https://www.facebook.com/EasyVeggieIdeas/">FB</a> 
-                        <a href="https://www.youtube.com/@vidavegana">YT</a> 
-                        <a href="https://www.instagram.com/vegan/">IG</a> 
-                        <a href="https://www.tiktok.com/@feedyoursoul____?_r=1&_t=ZT-967Yb3nEdzh">TK</a>
-                    </div> 
-</html>
+    </div>
+</footer>
 
-  
-       
-   
+<script src="main.js"></script>
